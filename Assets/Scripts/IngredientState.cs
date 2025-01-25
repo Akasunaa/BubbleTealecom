@@ -8,7 +8,8 @@ using UnityEngine;
 public struct IngredientTransformation
 {
     public Transformation transformation;
-    public IngredientState newIngredientState;
+    public List<IngredientState> otherRequiredIngredientStates; // other ingredients present in the machine
+    public IngredientState newIngredientState; // one transformation always produce one ingredient
 }
 
 [Serializable]
@@ -16,19 +17,38 @@ public struct IngredientTransformation
 public class IngredientState : ScriptableObject
 {
     public Sprite sprite;
-    [SerializeField] public List<IngredientTransformation> possible_transformations;
+    [SerializeField] public List<IngredientTransformation> possibleTransformations;
     
     [CanBeNull]
-    public IngredientState Transform(Transformation transformation)
+    public IngredientState Transform(Transformation transformation, List<IngredientState> otherIngredients = null)
     {
-        foreach (var possible_transformation in possible_transformations)
+        foreach (var possibleTransformation in possibleTransformations)
         {
-            if (possible_transformation.transformation == transformation)
+            if (possibleTransformation.transformation == transformation && CompareIngredientList(possibleTransformation.otherRequiredIngredientStates, otherIngredients))
             {
-                return possible_transformation.newIngredientState;
+                return possibleTransformation.newIngredientState;
             }
         }
 
         return null;
     }
+    
+    bool CompareIngredientList(List<IngredientState> one, List<IngredientState> two)
+    {
+        if (one.Count != two.Count)
+        {
+            return false;
+        }
+
+        foreach (var ingredientState in one)
+        {
+            if (two.Contains(ingredientState))
+            {
+                two.Remove(ingredientState);
+            }
+        }
+    
+        return two.Count == 0;
+    }
 }
+

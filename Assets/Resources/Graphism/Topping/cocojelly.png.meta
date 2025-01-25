@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cocojelly_0: -5573473015858353260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
