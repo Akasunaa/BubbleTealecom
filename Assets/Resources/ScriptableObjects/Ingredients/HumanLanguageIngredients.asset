@@ -17,11 +17,21 @@ MonoBehaviour:
     image: {fileID: 7381965769198725172, guid: 57a1621048e1c824cbfe8a93f15f6338, type: 3}
   - ingredientState: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
     image: {fileID: 6842022643447635020, guid: fa9bf750dcb6b7d46994424b2d7e9562, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 3bd200193d670454fafc517035dd600a, type: 2}
+    image: {fileID: -4896054382793421408, guid: a0dd3eaffcecd4942a4915cbd68d604c, type: 3}
+  - ingredientState: {fileID: 11400000, guid: c3d4d96d12b429a4a80009d8302e3601, type: 2}
+    image: {fileID: 2372262511761390819, guid: 30d244bb777682f4a9db51e4b0fcb61a, type: 3}
   - ingredientState: {fileID: 11400000, guid: 6ef9dfa6ec220544f9129e0323645f31, type: 2}
     image: {fileID: -843232114449640590, guid: 864a09f939393e3449e2b6ab293beb2f, type: 3}
   - ingredientState: {fileID: 11400000, guid: 55a75becab56ad14ea62d2304f1356bf, type: 2}
     image: {fileID: -6231707311893363455, guid: f8cf72e0763bd0948b5681048b1a77b0, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 055a6c61606af204196d5f12120cd2c9, type: 2}
+    image: {fileID: -934338234819615233, guid: e4f978c5ebe57324781254fde54556db, type: 3}
   - ingredientState: {fileID: 11400000, guid: 89189f84ac65df64bbe0d28c002d4be1, type: 2}
     image: {fileID: -6032115741611381947, guid: e9f5aaef1e5d5f64db70664cc4c284d1, type: 3}
-  - ingredientState: {fileID: 11400000, guid: 3bd200193d670454fafc517035dd600a, type: 2}
-    image: {fileID: -4896054382793421408, guid: a0dd3eaffcecd4942a4915cbd68d604c, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 35ac345eb590a10488009b9221acba31, type: 2}
+    image: {fileID: -5317333659318474841, guid: 026203c8ffd09e74daa635d6e3113f90, type: 3}
+  - ingredientState: {fileID: 11400000, guid: c15587282f8c1ee48b7dc52b77a0b51f, type: 2}
+    image: {fileID: -3596645718660993179, guid: fa46cc9b4ebd4ca4a9b0d02d54fbfd64, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 5cdc4cf010a94bd46bd1dfec427f6c1e, type: 2}
+    image: {fileID: -5573473015858353260, guid: 5080e4e82ca558047bdb83832ab252d1, type: 3}

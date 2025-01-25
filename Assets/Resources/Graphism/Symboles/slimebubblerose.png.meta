@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slimebubblerose_0: -4143388762407575804
+      slimebubblerose_1: 4903129920163620337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

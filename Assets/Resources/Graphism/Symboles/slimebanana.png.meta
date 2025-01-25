@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slimebanana_0: 2686800822586402955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

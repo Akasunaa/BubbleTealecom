@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slimetapioca_0: 7591093141194845548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

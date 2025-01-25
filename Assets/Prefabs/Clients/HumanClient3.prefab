@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5985489045123020658}
   - component: {fileID: 178819849545637285}
   m_Layer: 0
-  m_Name: HumanClient2
+  m_Name: HumanClient3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f45bfaf4c7f4f09aea2ce57f1631e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recipeDisplayElements: {fileID: 11400000, guid: 411523ddefff9bd43b3f29c6224e38e8, type: 2}
+  recipeDisplayElements: {fileID: 11400000, guid: ee4141179d0c42e45adebcc6332bf846, type: 2}
   timerMax: 5
   timerFillImage: {fileID: 3674085021553774171}
   bubbleRecipe: {fileID: 2434923002370888994}
@@ -224,7 +224,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6388163620815734071, guid: b736d3bfed252c5769b14c0340b5d62e, type: 3}
+  m_Sprite: {fileID: -3108465536558337904, guid: aec77269d97bdc3e4b4a260577580565, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

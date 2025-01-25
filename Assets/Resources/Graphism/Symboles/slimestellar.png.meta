@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slimestellar_0: -724441836890156762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

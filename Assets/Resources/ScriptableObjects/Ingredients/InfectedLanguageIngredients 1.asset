@@ -14,14 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientStatesImages:
   - ingredientState: {fileID: 11400000, guid: 73d61d8035763e543bf190270c162d31, type: 2}
-    image: {fileID: 7381965769198725172, guid: 57a1621048e1c824cbfe8a93f15f6338, type: 3}
+    image: {fileID: 5502354005461936565, guid: 23ce00a98f9a6a84caadf51036c12724, type: 3}
   - ingredientState: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
-    image: {fileID: 6842022643447635020, guid: fa9bf750dcb6b7d46994424b2d7e9562, type: 3}
+    image: {fileID: -6920274672158514710, guid: 4b8876d4388a9fe409f6e977dd56089e, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 3bd200193d670454fafc517035dd600a, type: 2}
+    image: {fileID: -1616334116981554959, guid: cc519f56e72f1df42acf487bde0f17ef, type: 3}
+  - ingredientState: {fileID: 11400000, guid: c3d4d96d12b429a4a80009d8302e3601, type: 2}
+    image: {fileID: 7881640854051471953, guid: c27cf763d18deda49adaac529f5e2765, type: 3}
   - ingredientState: {fileID: 11400000, guid: 6ef9dfa6ec220544f9129e0323645f31, type: 2}
-    image: {fileID: -843232114449640590, guid: 864a09f939393e3449e2b6ab293beb2f, type: 3}
+    image: {fileID: 5616587457831076926, guid: 79ee4470b68d2d94782fe0e1b3881b87, type: 3}
   - ingredientState: {fileID: 11400000, guid: 55a75becab56ad14ea62d2304f1356bf, type: 2}
-    image: {fileID: -6231707311893363455, guid: f8cf72e0763bd0948b5681048b1a77b0, type: 3}
+    image: {fileID: 8570433102387131616, guid: 3676955a30daf284eaeb171193f1aa59, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 055a6c61606af204196d5f12120cd2c9, type: 2}
+    image: {fileID: 6500969682240522031, guid: 34633ac4dec5a7e4d840c697dc85183c, type: 3}
   - ingredientState: {fileID: 11400000, guid: 89189f84ac65df64bbe0d28c002d4be1, type: 2}
     image: {fileID: -6032115741611381947, guid: e9f5aaef1e5d5f64db70664cc4c284d1, type: 3}
-  - ingredientState: {fileID: 11400000, guid: 3bd200193d670454fafc517035dd600a, type: 2}
-    image: {fileID: -4896054382793421408, guid: a0dd3eaffcecd4942a4915cbd68d604c, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 35ac345eb590a10488009b9221acba31, type: 2}
+    image: {fileID: 8288453593282885826, guid: 5c6fa6b40c07e3b4f9d14e94975fa89e, type: 3}
+  - ingredientState: {fileID: 11400000, guid: c15587282f8c1ee48b7dc52b77a0b51f, type: 2}
+    image: {fileID: -6471393146006100527, guid: 46eda0dac28b31f4b90d6672ec9696a7, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 5cdc4cf010a94bd46bd1dfec427f6c1e, type: 2}
+    image: {fileID: -8032062433887188865, guid: 605df5389cd062543875845dc8e0d0e8, type: 3}
