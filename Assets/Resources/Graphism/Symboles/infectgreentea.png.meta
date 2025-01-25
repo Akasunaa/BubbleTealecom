@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      infectgreentea_0: 8570433102387131616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

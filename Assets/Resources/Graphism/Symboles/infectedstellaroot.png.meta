@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      infectedstellaroot_0: 6500969682240522031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

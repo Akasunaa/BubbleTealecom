@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      infectedcocojelly_0: -8032062433887188865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

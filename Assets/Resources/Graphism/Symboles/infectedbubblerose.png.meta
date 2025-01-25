@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      infectedbubblerose_0: 8288453593282885826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
