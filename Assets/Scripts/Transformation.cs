@@ -7,6 +7,8 @@ using UnityEngine;
 public enum Transformation
 {
     None,
-    Heat,
     Cut,
+    MolecularAssembly,
+    Slimification,
+    Glitchification,
 }

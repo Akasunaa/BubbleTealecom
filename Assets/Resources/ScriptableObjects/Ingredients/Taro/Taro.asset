@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Taro
   m_EditorClassIdentifier: 
   sprite: {fileID: -4896054382793421408, guid: a0dd3eaffcecd4942a4915cbd68d604c, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 1
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 11400000, guid: b4c9dc048e614bf45ba394bba9aed207, type: 2}
+  transformations: 
+  oldIngredientState: []

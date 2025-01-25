@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Banana
   m_EditorClassIdentifier: 
   sprite: {fileID: 7381965769198725172, guid: 57a1621048e1c824cbfe8a93f15f6338, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 1
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 11400000, guid: 2d0692f12a072d540a9a0ff6f40e428d, type: 2}
+  transformations: 
+  oldIngredientState: []

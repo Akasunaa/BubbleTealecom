@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: FluffyLeaf
   m_EditorClassIdentifier: 
   sprite: {fileID: -6231707311893363455, guid: f8cf72e0763bd0948b5681048b1a77b0, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 1
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 11400000, guid: e8ea181fd5a21fd4390416c603cdfc72, type: 2}
+  transformations: 
+  oldIngredientState: []

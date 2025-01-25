@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 6842022643447635020, guid: fa9bf750dcb6b7d46994424b2d7e9562, type: 3}
   possibleTransformations:
-  - transformation: 2
+  - transformation: 1
     otherRequiredIngredientStates: []
     newIngredientState: {fileID: 11400000, guid: f7843579a8a4acf4798cde4f4c665788, type: 2}
+  transformations: 
+  oldIngredientState: []

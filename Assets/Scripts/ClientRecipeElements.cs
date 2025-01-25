@@ -8,6 +8,17 @@ public class ClientRecipeElement
 {
     public List<IngredientState> ingredientStates;
     public Transformation transform;
+
+    public IngredientState ToIngredientState()
+    {
+        if (ingredientStates.Count > 1)
+        {
+            List<IngredientState> otherIngredientStates = ingredientStates.GetRange(1, ingredientStates.Count - 1);
+            return ingredientStates[0].Transform(transform, otherIngredientStates);
+        }
+
+        return ingredientStates[0].Transform(transform);
+    }
 }
 
 [Serializable]
@@ -21,17 +32,7 @@ public class ClientRecipeElements : ScriptableObject
         Recipe recipe = new Recipe();
         foreach (var clientRecipeElement in recipeElements)
         {
-            if (clientRecipeElement.ingredientStates.Count > 1)
-            {
-                List<IngredientState> otherIngredientStates = clientRecipeElement.ingredientStates.GetRange(1, clientRecipeElement.ingredientStates.Count - 1);
-                IngredientState ingredientState = clientRecipeElement.ingredientStates[0].Transform(clientRecipeElement.transform, otherIngredientStates);
-                recipe.finalIngredientStates.Add(ingredientState);
-            }
-            else
-            {
-                IngredientState ingredientState = clientRecipeElement.ingredientStates[0].Transform(clientRecipeElement.transform);
-                recipe.finalIngredientStates.Add(ingredientState);
-            }
+            recipe.finalIngredientStates.Add(clientRecipeElement.ToIngredientState());
         }
         return recipe;
     }
