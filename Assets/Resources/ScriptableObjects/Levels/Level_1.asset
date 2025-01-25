@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Level_1
   m_EditorClassIdentifier: 
   _outsideSprite: {fileID: 21300000, guid: 40bb18153031f19468bd5210df804afb, type: 3}
-  _fruits: 00000000
-  _teas: 00000000
-  _bubbles: 01000000
-  _toppings: 
-  _machines: 00000000
+  _fruits: 00000000010000000200000003000000
+  _teas: 000000000100000002000000
+  _bubbles: 0100000000000000
+  _toppings: 0000000001000000
+  _machines: 000000000100000002000000
   _clients: []
