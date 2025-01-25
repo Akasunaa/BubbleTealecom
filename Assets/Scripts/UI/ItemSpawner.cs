@@ -42,7 +42,7 @@ namespace UI
             {
                 if (!ItemUtils.TrySlotItem(eventData, _spawnedItem))
                 {
-                    Destroy(_spawnedItem);
+                    ItemUtils.DropItem(eventData, _spawnedItem);
                 }
 
                 _spawnedItem = null;

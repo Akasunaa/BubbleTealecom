@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace UI
 {
-    public class DragWindow : Window, IDragHandler
+    public class DragWindow : Window, IDragHandler, IDroppable
     {
         private RectTransform _rectTransform;
 
@@ -56,6 +56,11 @@ namespace UI
             _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
             
             ClampDrag();
+        }
+
+        public virtual void Drop(PointerEventData eventData)
+        {
+            Destroy(gameObject);
         }
     }
 }

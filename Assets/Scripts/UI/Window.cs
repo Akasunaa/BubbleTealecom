@@ -19,6 +19,8 @@ namespace UI
             _stack = GetComponentInParent<WindowStack>();
         }
 
+        protected virtual void OnPointerDownFunc() {}
+
         public Transform GetItemHolder()
         {
             if (_stack)
@@ -40,6 +42,7 @@ namespace UI
         public void OnPointerDown(PointerEventData eventData)
         {
             Focus();
+            OnPointerDownFunc();
         }
     }
 }

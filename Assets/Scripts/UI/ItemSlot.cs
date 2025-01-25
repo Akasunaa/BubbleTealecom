@@ -65,7 +65,7 @@ namespace UI
                 _item = null;
                 if (!ItemUtils.TrySlotItem(eventData, item))
                 {
-                    Destroy(item);
+                    ItemUtils.DropItem(eventData, item);
                 }
             }
         }
