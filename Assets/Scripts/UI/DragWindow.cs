@@ -5,8 +5,6 @@ namespace UI
 {
     public class DragWindow : Window, IDragHandler, IPointerDownHandler
     {
-        [SerializeField] private Canvas _canvas;
-
         private RectTransform _rectTransform;
 
         void Start()
