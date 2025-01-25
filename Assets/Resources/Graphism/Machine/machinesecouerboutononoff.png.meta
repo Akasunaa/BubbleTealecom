@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 28294555fd30e6b43b662e4362d3305a
+guid: f73c0fce688c97f4ab6511c7b25f3bff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5441009541913305315
-    second: circle_fill_0
+      213: 3975225984636536462
+    second: boutononoff_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: circle_fill_0
+      name: boutononoff_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 500
+        x: 89
+        y: 7
+        width: 290
+        height: 419
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1f1fba36a6ad74b0800000000000000
-      internalID: -5441009541913305315
+      spriteID: e86c92ca8f6da2730800000000000000
+      internalID: 3975225984636536462
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      circle_fill_0: -5441009541913305315
+      boutononoff_0: 3975225984636536462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

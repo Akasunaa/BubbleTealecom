@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 28294555fd30e6b43b662e4362d3305a
+guid: 38aa81a7bec22e445b7c6ac97b0efc6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5441009541913305315
-    second: circle_fill_0
+      213: 4947194554139879748
+    second: machinetranchedcut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: circle_fill_0
+      name: machinetranchedcut_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 500
+        x: 36
+        y: 48
+        width: 417
+        height: 372
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1f1fba36a6ad74b0800000000000000
-      internalID: -5441009541913305315
+      spriteID: 44921425c37f7a440800000000000000
+      internalID: 4947194554139879748
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      circle_fill_0: -5441009541913305315
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
