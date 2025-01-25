@@ -45,4 +45,18 @@ public class ClientManager : MonoBehaviour
         Destroy(currentClient);
         SpawnNextClient();
     }
+
+    public void ClientHappy()
+    {
+        Debug.Log("Happy Client got his BUBBLE TEA !");
+        Destroy(currentClient);
+        SpawnNextClient();
+    }
+    
+    public void ClientUnHappy()
+    {
+        Debug.Log("Un Happy Client didn't get his desired BUBBLE TEA !");
+        Destroy(currentClient);
+        SpawnNextClient();
+    }
 }

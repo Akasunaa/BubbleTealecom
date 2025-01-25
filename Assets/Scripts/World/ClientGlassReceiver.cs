@@ -10,8 +10,8 @@ namespace World
             var cpnt = glass.GetComponent<GlassItemSlot>();
             if (cpnt)
             {
-                bool isGoodRecipe = GetComponent<Client>().CompareRecipe(cpnt.GetRecipe());
-                Debug.Log("Is Good Recipe: " + isGoodRecipe);
+                GetComponent<Client>().GiveGlass(cpnt.GetRecipe());
+                cpnt.Clear();
             }
         }
     }

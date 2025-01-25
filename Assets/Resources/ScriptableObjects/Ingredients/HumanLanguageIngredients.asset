@@ -25,3 +25,5 @@ MonoBehaviour:
     image: {fileID: -6032115741611381947, guid: e9f5aaef1e5d5f64db70664cc4c284d1, type: 3}
   - ingredientState: {fileID: 11400000, guid: 3bd200193d670454fafc517035dd600a, type: 2}
     image: {fileID: -4896054382793421408, guid: a0dd3eaffcecd4942a4915cbd68d604c, type: 3}
+  - ingredientState: {fileID: 11400000, guid: f7843579a8a4acf4798cde4f4c665788, type: 2}
+    image: {fileID: -3829202401765635722, guid: c3365681aa72b8947b66612d84a19c6c, type: 3}

@@ -18,6 +18,7 @@ public class Client : MonoBehaviour
     public IngredientStateImageList ingredientStateImageList;
     public TransformationImageList transformationImageList;
     public Transform bubbleFirstElementTransform;
+    public Transform bubbleAnswerElementTransform;
     public Sprite delimiterSprite;
     public Gradient timerGradient;
 
@@ -49,9 +50,33 @@ public class Client : MonoBehaviour
         timerFillImage.fillAmount = _timer / timerMax;
     }
 
-    public bool CompareRecipe(Recipe otherRecipe)
+    public void GiveGlass(Recipe otherRecipe)
     {
-        return Recipe.CompareIngredientList(recipe.finalIngredientStates, otherRecipe.finalIngredientStates);
+        _timerEnded = true;
+        bool isGoodRecipe = Recipe.CompareIngredientList(recipe.finalIngredientStates, otherRecipe.finalIngredientStates);
+        if (isGoodRecipe)
+        {
+            ClientManager.Instance.ClientHappy();
+        }
+        else
+        {
+            bubbleRecipe.SetActive(false);
+            var firstWrongIngredient = recipe.finalIngredientStates.Find(ingredientState => !otherRecipe.finalIngredientStates.Contains(ingredientState));
+            if (!firstWrongIngredient)
+            {
+                Debug.LogError("There should be a wrong ingredient somewhere");
+            }
+            GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleRecipeAnswer.transform);
+            clientElement.GetComponent<Image>().sprite = GetSpriteFrom(firstWrongIngredient);
+            clientElement.GetComponent<Image>().transform.position = bubbleAnswerElementTransform.position;
+            bubbleRecipeAnswer.SetActive(true);
+            Invoke(nameof(UnHappyClient), 3.0f);
+        }
+    }
+
+    private void UnHappyClient()
+    {
+        ClientManager.Instance.ClientUnHappy();
     }
 
     private void EndTimer()
