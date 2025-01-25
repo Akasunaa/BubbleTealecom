@@ -473,7 +473,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      infectedatom_0: -8560667399852265961
+      infectedatom_1: 6258983077494333806
+      infectedatom_10: -3753300966619784039
+      infectedatom_11: -6240888767595726095
+      infectedatom_12: -5400274088032594255
+      infectedatom_2: -6603785247971582373
+      infectedatom_3: 7215200072947111589
+      infectedatom_4: 8584503887264079892
+      infectedatom_5: -1123727538927887506
+      infectedatom_6: 6806873645475645643
+      infectedatom_7: -5237868477530805119
+      infectedatom_8: 5173419063994243054
+      infectedatom_9: 3067338167155156607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
