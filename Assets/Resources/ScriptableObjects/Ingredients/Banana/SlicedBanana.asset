@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 553b1e754fb74e5db463ffd3ca8a939a, type: 3}
-  m_Name: Banana
+  m_Name: SlicedBanana
   m_EditorClassIdentifier: 
-  sprite: {fileID: 7381965769198725172, guid: 57a1621048e1c824cbfe8a93f15f6338, type: 3}
-  possibleTransformations:
-  - transformation: 1
-    otherRequiredIngredientStates: []
-    newIngredientState: {fileID: 11400000, guid: 2d0692f12a072d540a9a0ff6f40e428d, type: 2}
+  sprite: {fileID: 4563487645243067450, guid: bbcf7fdc2ae02f040b8c4b6ff1d2f1b4, type: 3}
+  possibleTransformations: []
   transformations: 
   oldIngredientState: []
