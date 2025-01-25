@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cc519f56e72f1df42acf487bde0f17ef
+guid: c27cf763d18deda49adaac529f5e2765
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1616334116981554959
-    second: infecttaro 1_0
+      213: 7881640854051471953
+    second: infectedfluffyleaf_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: infecttaro 1_0
+      name: infectedfluffyleaf_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 868
-        height: 832
+        x: 46
+        y: 49
+        width: 937
+        height: 852
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f048fe2fa0a199e0800000000000000
-      internalID: -1616334116981554959
+      spriteID: 152c1f81996316d60800000000000000
+      internalID: 7881640854051471953
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      infecttaro 1_0: -1616334116981554959
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
