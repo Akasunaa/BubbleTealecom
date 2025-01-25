@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sachetgreentea_0: -5606204309579404040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

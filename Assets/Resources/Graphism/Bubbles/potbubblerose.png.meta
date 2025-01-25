@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      potbubblerose_0: -1111263485691063345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
