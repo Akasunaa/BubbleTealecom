@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      infectblacktea_0: 5616587457831076926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
