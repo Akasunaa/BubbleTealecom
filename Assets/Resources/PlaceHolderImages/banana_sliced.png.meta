@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a0dd3eaffcecd4942a4915cbd68d604c
+guid: 099abd5aa94d4254cbad757af605f0ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4896054382793421408
-    second: taro_0
+      213: -6258758261530679109
+    second: banana_sliced_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: taro_0
+      name: banana_sliced_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 19
-        width: 1267
-        height: 1465
+        x: 0
+        y: 0
+        width: 569
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ad8a90ba78bd0cb0800000000000000
-      internalID: -4896054382793421408
+      spriteID: bb82c6e758c6429a0800000000000000
+      internalID: -6258758261530679109
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      taro_0: -4896054382793421408
+      banana_sliced_0: -6258758261530679109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

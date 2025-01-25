@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fluffyleaf_0: 2372262511761390819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

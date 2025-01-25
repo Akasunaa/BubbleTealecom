@@ -6,7 +6,6 @@ using UnityEngine;
 public class Client : MonoBehaviour
 {
     public Recipe recipe;
-    public string bubble_text;
 
     private void Start()
     {

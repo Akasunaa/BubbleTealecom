@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tapioca_0: -6032115741611381947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
