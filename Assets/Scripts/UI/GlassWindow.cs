@@ -45,7 +45,7 @@ namespace UI
             float interval = 0.0f;
             if (ItemUtils.TryGiveGlass(eventData, gameObject))
             {
-                interval = 1.0f;
+                interval = 0.6f;
             }
 
             DOTween.Sequence(transform)
