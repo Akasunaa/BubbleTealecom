@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slicedfluffyleaf_0: -1419029109477264862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
