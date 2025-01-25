@@ -9,7 +9,6 @@ namespace UI
     {
         private Vector3 _start;
         private CanvasGroup _group;
-        private GlassData _data = new GlassData();
 
         void Start()
         {
@@ -44,7 +43,7 @@ namespace UI
         {
             _group.blocksRaycasts = true;
             float interval = 0.0f;
-            if (ItemUtils.TryGiveGlass(eventData, _data))
+            if (ItemUtils.TryGiveGlass(eventData, gameObject))
             {
                 interval = 1.0f;
             }

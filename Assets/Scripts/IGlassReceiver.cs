@@ -1,4 +1,6 @@
+using UnityEngine;
+
 public interface IGlassReceiver
 {
-    public void ReceiveGlass(GlassData glass);
+    public void ReceiveGlass(GameObject glass);
 }

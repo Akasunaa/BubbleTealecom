@@ -1,13 +1,18 @@
+using UI;
 using UnityEngine;
 
 namespace World
 {
     public class ClientGlassReceiver : MonoBehaviour, IGlassReceiver
     {
-        public void ReceiveGlass(GlassData glass)
+        public void ReceiveGlass(GameObject glass)
         {
-            bool isGoodRecipe = GetComponent<Client>().CompareRecipe(glass.recipe);
-            Debug.Log("Is Good Recipe: " + isGoodRecipe);
+            var cpnt = glass.GetComponent<GlassItemSlot>();
+            if (cpnt)
+            {
+                bool isGoodRecipe = GetComponent<Client>().CompareRecipe(cpnt.GetRecipe());
+                Debug.Log("Is Good Recipe: " + isGoodRecipe);
+            }
         }
     }
 }

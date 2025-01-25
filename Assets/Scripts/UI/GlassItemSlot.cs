@@ -16,5 +16,16 @@ namespace UI
         {
             return true;
         }
+
+        public Recipe GetRecipe()
+        {
+            // todo
+            return new Recipe();
+        }
+
+        public void Clear()
+        {
+            // todo
+        }
     }
 }

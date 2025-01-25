@@ -20,7 +20,7 @@ namespace UI.Utils
             return false;
         }
 
-        public static bool TryGiveGlass(PointerEventData eventData, GlassData glass)
+        public static bool TryGiveGlass(PointerEventData eventData, GameObject glass)
         {
             foreach (var hovered in eventData.hovered)
             {
