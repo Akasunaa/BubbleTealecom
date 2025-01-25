@@ -6,6 +6,7 @@ using UnityEngine;
 [Serializable]
 public enum Transformation
 {
+    None,
     Heat,
     Cut,
 }

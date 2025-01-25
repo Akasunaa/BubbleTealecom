@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Unity.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
@@ -22,33 +23,20 @@ public class IngredientState : ScriptableObject
     [CanBeNull]
     public IngredientState Transform(Transformation transformation, List<IngredientState> otherIngredients = null)
     {
+        if (transformation == Transformation.None)
+        {
+            return this;
+        }
+        
         foreach (var possibleTransformation in possibleTransformations)
         {
-            if (possibleTransformation.transformation == transformation && CompareIngredientList(possibleTransformation.otherRequiredIngredientStates, otherIngredients))
+            if (possibleTransformation.transformation == transformation && Recipe.CompareIngredientList(possibleTransformation.otherRequiredIngredientStates, otherIngredients))
             {
                 return possibleTransformation.newIngredientState;
             }
         }
 
         return null;
-    }
-    
-    bool CompareIngredientList(List<IngredientState> one, List<IngredientState> two)
-    {
-        if (one.Count != two.Count)
-        {
-            return false;
-        }
-
-        foreach (var ingredientState in one)
-        {
-            if (two.Contains(ingredientState))
-            {
-                two.Remove(ingredientState);
-            }
-        }
-    
-        return two.Count == 0;
     }
 }
 
