@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Banana
   m_EditorClassIdentifier: Assembly-CSharp::IngredientState
   sprite: {fileID: -9182177788924653191, guid: 6040c6e5661813c4aaf99a72077d3ecd, type: 3}
-  possible_transformations:
-  - transformation: 1
+  possibleTransformations:
+  - transformation: 2
+    otherRequiredIngredientStates: []
     newIngredientState: {fileID: 11400000, guid: aa94248f6c1696e40acb4237ec7b1018, type: 2}

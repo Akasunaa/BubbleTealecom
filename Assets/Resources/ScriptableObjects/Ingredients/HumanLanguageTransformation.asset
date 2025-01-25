@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d9445ae3af540fb8a38dd40f9b2e30e, type: 3}
-  m_Name: Mix1
+  m_Script: {fileID: 11500000, guid: 20b177a42c224270b9d5cebdec28cf2a, type: 3}
+  m_Name: HumanLanguageTransformation
   m_EditorClassIdentifier: 
-  recipeElements:
-  - ingredientStates:
-    - {fileID: 11400000, guid: 73d61d8035763e543bf190270c162d31, type: 2}
-    transform: 2
+  transformationImages:
+  - transformation: 2
+    image: {fileID: 761100573506273824, guid: 90d8739828ae3cf4eb0460617e1bd290, type: 3}
