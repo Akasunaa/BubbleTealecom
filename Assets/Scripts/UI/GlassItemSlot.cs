@@ -5,22 +5,32 @@ namespace UI
     public class GlassItemSlot : ItemSlot
     {
         [SerializeField] private Transform _slotList;
+        private Recipe _recipe = new Recipe();
 
         public override void Receive(GameObject item)
         {
             item.transform.localScale = Vector3.one;
             item.transform.SetParent(_slotList);
+
+            var ingredient = item.GetComponent<Ingredient>();
+            if (ingredient)
+            {
+                _recipe.finalIngredientStates.Add(ingredient.ingredient_state);
+            }
+            else
+            {
+                Debug.LogError("Missing Ingredient on received object");
+            }
         }
 
         public override bool IsEmpty()
         {
-            return true;
+            return _recipe.finalIngredientStates.Count == 0;
         }
 
         public Recipe GetRecipe()
         {
-            // todo
-            return new Recipe();
+            return _recipe;
         }
 
         public void Clear()
@@ -30,6 +40,7 @@ namespace UI
             {
                 Destroy(_slotList.GetChild(i).gameObject);
             }
+            _recipe = new Recipe();
         }
     }
 }

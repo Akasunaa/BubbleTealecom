@@ -8,5 +8,4 @@ using UnityEngine.UI;
 public class Ingredient : MonoBehaviour
 {
     public IngredientState ingredient_state;
-    public Image image;
 }

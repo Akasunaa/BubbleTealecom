@@ -19,6 +19,7 @@ public class Client : MonoBehaviour
     public TransformationImageList transformationImageList;
     public Transform bubbleFirstElementTransform;
     public Sprite delimiterSprite;
+    public Gradient timerGradient;
 
     private void Start()
     {
@@ -28,6 +29,11 @@ public class Client : MonoBehaviour
     }
 
     private void Update()
+    {
+        UpdateTimer();
+    }
+
+    private void UpdateTimer()
     {
         _timer -= Time.deltaTime;
         if (_timer < 0)
@@ -39,6 +45,7 @@ public class Client : MonoBehaviour
                 EndTimer();
             }
         }
+        timerFillImage.color =  timerGradient.Evaluate(1.0f - _timer / timerMax);
         timerFillImage.fillAmount = _timer / timerMax;
     }
 
