@@ -142,10 +142,10 @@ TextureImporter:
       name: bubblerose_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 81
-        width: 990
-        height: 767
+        x: 15
+        y: 122
+        width: 1485
+        height: 1150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

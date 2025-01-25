@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f41b806382e92e04d81bbfe7f0843e31
+guid: fa46cc9b4ebd4ca4a9b0d02d54fbfd64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3356302069181093370
-    second: cream_0
+      213: -3596645718660993179
+    second: cream 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cream_0
+      name: cream 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 79
-        width: 978
-        height: 875
+        y: 119
+        width: 1467
+        height: 1312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60a6d8fec050c61d0800000000000000
-      internalID: -3356302069181093370
+      spriteID: 56f284456c5261ec0800000000000000
+      internalID: -3596645718660993179
       vertices: []
       indices: 
       edges: []
@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cream 1_0: -3596645718660993179
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
