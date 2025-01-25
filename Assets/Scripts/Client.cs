@@ -18,7 +18,6 @@ public class Client : MonoBehaviour
     public IngredientStateImageList ingredientStateImageList;
     public TransformationImageList transformationImageList;
     public Transform bubbleFirstElementTransform;
-    public float bubbleSpacing;
     public Sprite delimiterSprite;
 
     private void Start()
@@ -66,7 +65,7 @@ public class Client : MonoBehaviour
                 clientElement.GetComponent<Image>().sprite = GetSpriteFrom(ingredientState);
                 clientElement.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
                 clientElement.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
-                translateX -= bubbleSpacing;
+                translateX -= clientElement.GetComponent<Image>().transform.lossyScale.x * clientElement.GetComponent<Image>().rectTransform.sizeDelta.x + 0.02f;
             }
 
             if (clientRecipeElement.transform != Transformation.None)
@@ -75,7 +74,7 @@ public class Client : MonoBehaviour
                 clientElementTransform.GetComponent<Image>().sprite = GetSpriteFrom(clientRecipeElement.transform);
                 clientElementTransform.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
                 clientElementTransform.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
-                translateX -= bubbleSpacing;
+                translateX -= clientElementTransform.GetComponent<Image>().transform.lossyScale.x * clientElementTransform.GetComponent<Image>().rectTransform.sizeDelta.x + 0.02f;
             }
 
             if (i < clientsRecipeElements.recipeElements.Count - 1)
@@ -84,7 +83,7 @@ public class Client : MonoBehaviour
                 clientElementDelimiter.GetComponent<Image>().sprite = delimiterSprite;
                 clientElementDelimiter.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
                 clientElementDelimiter.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
-                translateX -= bubbleSpacing;
+                translateX -= clientElementDelimiter.GetComponent<Image>().transform.lossyScale.x * clientElementDelimiter.GetComponent<Image>().rectTransform.sizeDelta.x + 0.02f;
             }
         }
     }
