@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc8a6f0a2b3e052488c79b7545ad0b14
+guid: 9244109a8cc063d4d98fbd737e21c684
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8993825122430992373
-    second: machinetranchewindow_0
+      213: -8285098921950103547
+    second: machinesecouerwindow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,11 +139,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: machinetranchewindow_0
+      name: machinesecouerwindow_0
       rect:
         serializedVersion: 2
-        x: 132
-        y: 56
+        x: 121
+        y: 75
         width: 1258
         height: 1350
       alignment: 0
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ffbb7a2c4c70dc70800000000000000
-      internalID: 8993825122430992373
+      spriteID: 50831344d6a650d80800000000000000
+      internalID: -8285098921950103547
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      machinetranchewindow_0: 8993825122430992373
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
