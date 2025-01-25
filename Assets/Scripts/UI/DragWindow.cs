@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace UI
 {
-    public class DragWindow : Window, IDragHandler, IPointerDownHandler
+    public class DragWindow : Window, IDragHandler
     {
         private RectTransform _rectTransform;
 
@@ -56,14 +56,6 @@ namespace UI
             _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
             
             ClampDrag();
-        }
-
-        public void OnPointerDown(PointerEventData eventData)
-        {
-            if (_stack)
-            {
-                _stack.MoveWindowToFront(gameObject);
-            }
         }
     }
 }

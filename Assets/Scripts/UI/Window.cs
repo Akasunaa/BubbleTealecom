@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace UI
 {
-    public class Window : MonoBehaviour
+    public class Window : MonoBehaviour, IPointerDownHandler
     {
         protected Canvas _canvas;
-        protected WindowStack _stack;
+        private WindowStack _stack;
 
         void Start()
         {
@@ -16,6 +17,14 @@ namespace UI
         {
             _canvas = GetComponentInParent<Canvas>();
             _stack = GetComponentInParent<WindowStack>();
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            if (_stack)
+            {
+                _stack.MoveWindowToFront(gameObject);
+            }
         }
     }
 }
