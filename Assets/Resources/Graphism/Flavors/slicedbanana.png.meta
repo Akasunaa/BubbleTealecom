@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slicedbanana_0: 4563487645243067450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

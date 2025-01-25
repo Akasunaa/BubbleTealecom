@@ -19,12 +19,27 @@ namespace UI
             _stack = GetComponentInParent<WindowStack>();
         }
 
-        public void OnPointerDown(PointerEventData eventData)
+        public Transform GetItemHolder()
+        {
+            if (_stack)
+            {
+                return _stack.GetItemHolder();
+            }
+
+            return null;
+        }
+
+        public void Focus()
         {
             if (_stack)
             {
                 _stack.MoveWindowToFront(gameObject);
             }
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            Focus();
         }
     }
 }
