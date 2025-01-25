@@ -10,6 +10,8 @@ namespace UI
         protected RectTransform _rectTransform;
         protected GameObject _item;
 
+        public GameObject GetItem() { return _item; }
+
         private void Start()
         {
             Init();
