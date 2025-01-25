@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class GlassData
 {
+    public Recipe recipe = new Recipe();
+
     public void Clear()
     {
-        Debug.Log("poubelle");
+        recipe = new Recipe();
     }
 }

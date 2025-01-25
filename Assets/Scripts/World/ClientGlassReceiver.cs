@@ -6,7 +6,8 @@ namespace World
     {
         public void ReceiveGlass(GlassData glass)
         {
-            Debug.Log("yummy");
+            bool isGoodRecipe = GetComponent<Client>().CompareRecipe(glass.recipe);
+            Debug.Log("Is Good Recipe: " + isGoodRecipe);
         }
     }
 }

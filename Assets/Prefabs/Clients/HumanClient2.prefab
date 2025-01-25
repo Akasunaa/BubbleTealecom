@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3775556767313573690}
   - component: {fileID: 8757574902159276565}
+  - component: {fileID: 5985489045123020658}
   m_Layer: 0
   m_Name: HumanClient2
   m_TagString: Untagged
@@ -56,7 +57,20 @@ MonoBehaviour:
   ingredientStateImageList: {fileID: 11400000, guid: a67a0c6ab77631c4bb73da3dac5075d5, type: 2}
   transformationImageList: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
   bubbleFirstElementTransform: {fileID: 7834159540968126166}
-  bubbleSpacing: 0.8
+  bubbleSpacing: 0.4
+  delimiterSprite: {fileID: 6843012731616801798, guid: 36efc0526044e0c48a1a713786810b1a, type: 3}
+--- !u!114 &5985489045123020658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458481278830898966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d08d2b9f174afeb3566bad1e73ed09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2012686566643374554
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +98,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3775556767313573690}
@@ -179,7 +193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.99, y: 3.32}
+  m_AnchoredPosition: {x: 3, y: 2}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2434609264993103524
@@ -569,7 +583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.5, y: 2.8688002}
+  m_AnchoredPosition: {x: -0.5, y: 1.6}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2883432697146075876
