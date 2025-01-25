@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      infectedfluffyleaf_0: 7881640854051471953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
