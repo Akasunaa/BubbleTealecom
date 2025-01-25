@@ -25,7 +25,11 @@ namespace UI
 
         public void Clear()
         {
-            // todo
+            int n = _slotList.childCount;
+            for (int i = n - 1; i >= 0; i--)
+            {
+                Destroy(_slotList.GetChild(i).gameObject);
+            }
         }
     }
 }
