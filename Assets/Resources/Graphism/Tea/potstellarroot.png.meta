@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      potstellarroot_0: -7317732075399842066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
