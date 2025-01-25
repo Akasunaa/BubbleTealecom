@@ -8,7 +8,6 @@ namespace UI
 
         public Transform GetItemHolder()
         {
-            print("1"+_itemHolder);
             return _itemHolder;
         }
 

@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections;
 using UI;
 using UnityEngine;
 
@@ -22,27 +23,28 @@ namespace Machines
             base.MachineExecuteButtonCalled();
             //we recover the item
             _curItemContained = _mainItemSlot.GetItem();
-            if (_curItemContained != null)
+            if (_curItemContained != null && _curItemContained.GetComponent<GlassItemSlot>() && !_curItemContained.GetComponent<GlassItemSlot>().GetIsShaken())
             {
                 print("Current item : "+_curItemContained.name);
-                if(_curItemContained.GetComponent<GlassItemSlot>())
-                {
-                    print("It's a glass ! ");
-                    GlassItemSlot glassItemSlot = _curItemContained.GetComponent<GlassItemSlot>();
-                    glassItemSlot.ShakeGlass();
-                }
-                else
-                {
-                    print("It is not a glass !");
-                    //TODO : Play failure sound !
-                }
+                print("It's a glass ! ");
+                GlassItemSlot glassItemSlot = _curItemContained.GetComponent<GlassItemSlot>();
+                StartCoroutine(MachineFunctionDelay(glassItemSlot));
             }
             else
             {
                 print("There is nothing !");
-                //TODO : Play failure sound !
+                SoundManager.PlaySound(SoundManager.Sound.Error);
             }
+        }
 
+        public IEnumerator MachineFunctionDelay(GlassItemSlot glassItemSlot)
+        {
+            yield return null;
+            SoundManager.PlaySound(SoundManager.Sound.Shaker);
+            AudioClip clip = SoundManager.GetAudioClip(SoundManager.Sound.Shaker);
+            print(clip.length);
+            yield return new WaitForSeconds(clip.length);
+            glassItemSlot.ShakeGlass();
         }
     }
 }

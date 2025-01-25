@@ -14,6 +14,8 @@ namespace UI
         [SerializeField] private Sprite _filledSprite;
         [SerializeField] private Sprite _emptySprite;
 
+        public bool GetIsShaken() {  return _isShaken; }
+
         public override void Receive(GameObject item)
         {
             item.transform.localScale = Vector3.one;
@@ -49,12 +51,12 @@ namespace UI
             }
             _recipe = new Recipe();
             _image.sprite = _emptySprite;
+            _isShaken=false;
         }
 
         public void ShakeGlass()
         {
             _isShaken = true;
-            //TODO : Shake the glass : i.e. turn content in correct liquid sprite
             //we clear the shake :
             int n = _slotList.childCount;
             for (int i = n - 1; i >= 0; i--)

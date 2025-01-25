@@ -23,7 +23,6 @@ namespace UI
             _parentDrag = GetComponentInParent<DragWindow>();
             _parentWindow = GetComponentInParent<Window>();
             _itemHolder = _parentWindow.GetItemHolder();
-            print("2"+_itemHolder);
         }
 
         public void OnDrag(PointerEventData eventData)
