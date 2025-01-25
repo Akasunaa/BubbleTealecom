@@ -25,7 +25,7 @@ namespace UI
 
         public override bool IsEmpty()
         {
-            return _recipe.finalIngredientStates.Count == 0;
+            return true;
         }
 
         public Recipe GetRecipe()
