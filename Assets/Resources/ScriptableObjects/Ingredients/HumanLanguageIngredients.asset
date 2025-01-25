@@ -17,3 +17,11 @@ MonoBehaviour:
     image: {fileID: 7381965769198725172, guid: 57a1621048e1c824cbfe8a93f15f6338, type: 3}
   - ingredientState: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
     image: {fileID: 6842022643447635020, guid: fa9bf750dcb6b7d46994424b2d7e9562, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 6ef9dfa6ec220544f9129e0323645f31, type: 2}
+    image: {fileID: -843232114449640590, guid: 864a09f939393e3449e2b6ab293beb2f, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 55a75becab56ad14ea62d2304f1356bf, type: 2}
+    image: {fileID: -6231707311893363455, guid: f8cf72e0763bd0948b5681048b1a77b0, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 89189f84ac65df64bbe0d28c002d4be1, type: 2}
+    image: {fileID: -6032115741611381947, guid: e9f5aaef1e5d5f64db70664cc4c284d1, type: 3}
+  - ingredientState: {fileID: 11400000, guid: 3bd200193d670454fafc517035dd600a, type: 2}
+    image: {fileID: -4896054382793421408, guid: a0dd3eaffcecd4942a4915cbd68d604c, type: 3}

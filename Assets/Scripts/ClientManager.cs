@@ -8,6 +8,7 @@ public class ClientManager : MonoBehaviour
 {
     public List<GameObject> clients;
     private GameObject currentClient;
+    public Transform clientSpawnPoint;
     public static ClientManager Instance { get; private set; }
 
     private void Awake() 
@@ -36,6 +37,7 @@ public class ClientManager : MonoBehaviour
         GameObject nextClient = clients[0];
         clients.RemoveAt(0);
         currentClient = Instantiate(nextClient);
+        currentClient.transform.position = clientSpawnPoint.position;
     }
 
     public void ClientTimerEnded()

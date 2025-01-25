@@ -19,6 +19,7 @@ public class Client : MonoBehaviour
     public TransformationImageList transformationImageList;
     public Transform bubbleFirstElementTransform;
     public float bubbleSpacing;
+    public Sprite delimiterSprite;
 
     private void Start()
     {
@@ -55,8 +56,10 @@ public class Client : MonoBehaviour
     private void DisplayRecipe(ClientRecipeElements clientsRecipeElements)
     {
         float translateX = 0.0f;
-        foreach (var clientRecipeElement in clientsRecipeElements.recipeElements)
+        for (var i = 0; i < clientsRecipeElements.recipeElements.Count; i++)
         {
+            ClientRecipeElement clientRecipeElement = clientsRecipeElements.recipeElements[i];
+            
             foreach (var ingredientState in clientRecipeElement.ingredientStates)
             {
                 GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleRecipe.transform);
@@ -65,12 +68,24 @@ public class Client : MonoBehaviour
                 clientElement.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
                 translateX -= bubbleSpacing;
             }
-            GameObject clientElementTransform = Instantiate(clientRecipeElementPrefab, bubbleRecipe.transform);
-            clientElementTransform.GetComponent<Image>().sprite = GetSpriteFrom(clientRecipeElement.transform);       
-            clientElementTransform.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
-            clientElementTransform.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
-            translateX -= bubbleSpacing;
 
+            if (clientRecipeElement.transform != Transformation.None)
+            {
+                GameObject clientElementTransform = Instantiate(clientRecipeElementPrefab, bubbleRecipe.transform);
+                clientElementTransform.GetComponent<Image>().sprite = GetSpriteFrom(clientRecipeElement.transform);
+                clientElementTransform.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
+                clientElementTransform.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
+                translateX -= bubbleSpacing;
+            }
+
+            if (i < clientsRecipeElements.recipeElements.Count - 1)
+            {
+                GameObject clientElementDelimiter = Instantiate(clientRecipeElementPrefab, bubbleRecipe.transform);
+                clientElementDelimiter.GetComponent<Image>().sprite = delimiterSprite;
+                clientElementDelimiter.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
+                clientElementDelimiter.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
+                translateX -= bubbleSpacing;
+            }
         }
     }
 
