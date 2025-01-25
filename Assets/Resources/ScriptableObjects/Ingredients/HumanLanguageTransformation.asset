@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: HumanLanguageTransformation
   m_EditorClassIdentifier: 
   transformationImages:
+  - transformation: 1
+    image: {fileID: 761100573506273824, guid: 58050a11632b86740a13dfe3ad57ce63, type: 3}
   - transformation: 2
-    image: {fileID: 761100573506273824, guid: 90d8739828ae3cf4eb0460617e1bd290, type: 3}
+    image: {fileID: 3094009027305210438, guid: 64ff6da6cbd666545b6da40c36d11d43, type: 3}
+  - transformation: 3
+    image: {fileID: 0}
+  - transformation: 3
+    image: {fileID: 0}

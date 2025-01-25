@@ -61,13 +61,9 @@ public class Client : MonoBehaviour
         else
         {
             bubbleRecipe.SetActive(false);
-            var firstWrongIngredient = recipe.finalIngredientStates.Find(ingredientState => !otherRecipe.finalIngredientStates.Contains(ingredientState));
-            if (!firstWrongIngredient)
-            {
-                Debug.LogError("There should be a wrong ingredient somewhere");
-            }
+            var firstWrongSprite = FindWrongItem(recipeDisplayElements, otherRecipe);
             GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleRecipeAnswer.transform);
-            clientElement.GetComponent<Image>().sprite = GetSpriteFrom(firstWrongIngredient);
+            clientElement.GetComponent<Image>().sprite = firstWrongSprite;
             clientElement.GetComponent<Image>().transform.position = bubbleAnswerElementTransform.position;
             bubbleRecipeAnswer.SetActive(true);
             Invoke(nameof(UnHappyClient), 3.0f);
@@ -145,6 +141,31 @@ public class Client : MonoBehaviour
         }
 
         Debug.LogError("Transformation image missing");
+        return null;
+    }
+
+    private Sprite FindWrongItem(ClientRecipeElements clientRecipeElements, Recipe glassRecipe)
+    {
+        foreach (var clientRecipeElement in recipeDisplayElements.recipeElements)
+        {
+            var ingredientState = clientRecipeElement.ToIngredientState();
+            if (!glassRecipe.finalIngredientStates.Contains(ingredientState))
+            {
+                // Look for base ingredient in the recipe
+                var wrongBaseIngredientState = clientRecipeElement.ingredientStates.Find(baseIngredientState =>
+                    !glassRecipe.finalIngredientStates.Find(recipeIngredientState => recipeIngredientState == baseIngredientState ||
+                        recipeIngredientState.oldIngredientState.Contains(baseIngredientState)) ==
+                    baseIngredientState);
+                if (wrongBaseIngredientState)
+                {
+                    return GetSpriteFrom(wrongBaseIngredientState);
+                }
+
+                return GetSpriteFrom(clientRecipeElement.transform);
+            }
+        }
+
+        Debug.LogError("Should not happen");
         return null;
     }
 }

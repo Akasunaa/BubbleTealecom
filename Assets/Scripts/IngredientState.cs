@@ -19,7 +19,9 @@ public class IngredientState : ScriptableObject
 {
     public Sprite sprite;
     [SerializeField] public List<IngredientTransformation> possibleTransformations;
-    
+    [HideInInspector] public List<Transformation> transformations = new List<Transformation>();
+    [HideInInspector] public List<IngredientState> oldIngredientState = new List<IngredientState>();
+
     [CanBeNull]
     public IngredientState Transform(Transformation transformation, List<IngredientState> otherIngredients = null)
     {
@@ -32,7 +34,10 @@ public class IngredientState : ScriptableObject
         {
             if (possibleTransformation.transformation == transformation && Recipe.CompareIngredientList(possibleTransformation.otherRequiredIngredientStates, otherIngredients))
             {
-                return possibleTransformation.newIngredientState;
+                IngredientState newIngredientState = possibleTransformation.newIngredientState;
+                newIngredientState.transformations.Add(transformation);
+                newIngredientState.oldIngredientState.Add(this);
+                return newIngredientState;
             }
         }
 
