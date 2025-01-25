@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: aec77269d97bdc3e4b4a260577580565
+guid: f9421046d7136804bb052c48e64ac1f6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3108465536558337904
-    second: humain1_0
-  - first:
-      213: 2069056394054748595
-    second: humain1_1
+      213: -4341392988023966502
+    second: machinetranchedwithbanana_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -142,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: humain1_0
+      name: machinetranchedwithbanana_0
       rect:
         serializedVersion: 2
-        x: 1128
-        y: 0
-        width: 1838
-        height: 3894
+        x: 396
+        y: 32
+        width: 2040
+        height: 2898
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,30 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09075e850138cd4d0800000000000000
-      internalID: -3108465536558337904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: humain1_1
-      rect:
-        serializedVersion: 2
-        x: 3556
-        y: 1852
-        width: 178
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b942ebf3d3c6bc10800000000000000
-      internalID: 2069056394054748595
+      spriteID: ad4b57e341640c3c0800000000000000
+      internalID: -4341392988023966502
       vertices: []
       indices: 
       edges: []
@@ -198,9 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      humain1_0: -3108465536558337904
-      humain1_1: 2069056394054748595
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
