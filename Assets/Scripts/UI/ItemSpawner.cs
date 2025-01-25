@@ -8,10 +8,10 @@ namespace UI
     public class ItemSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
         [SerializeField] private GameObject _itemPrefab;
-        [SerializeField] private Transform _itemHolder;
 
         private RectTransform _rectTransform;
         private Window _parentWindow;
+        private Transform _itemHolder;
 
         private GameObject _spawnedItem;
 
@@ -19,6 +19,7 @@ namespace UI
         {
             _rectTransform = GetComponent<RectTransform>();
             _parentWindow = GetComponentInParent<Window>();
+            _itemHolder = _parentWindow.GetItemHolder();
         }
 
         public void OnPointerDown(PointerEventData eventData)

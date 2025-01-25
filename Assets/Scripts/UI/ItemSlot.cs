@@ -7,19 +7,20 @@ namespace UI
 {
     public class ItemSlot : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
     {
-        [SerializeField] private Transform _itemHolder;
-
         private RectTransform _rectTransform;
         private DragWindow _parentDrag;
         private Window _parentWindow;
+        private Transform _itemHolder;
 
         private GameObject _item;
+        private Vector3 _prevItemScale;
 
         private void Start()
         {
             _rectTransform = GetComponent<RectTransform>();
             _parentDrag = GetComponentInParent<DragWindow>();
             _parentWindow = GetComponentInParent<Window>();
+            _itemHolder = _parentWindow.GetItemHolder();
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -52,7 +53,7 @@ namespace UI
             {
                 _item.transform.SetParent(_itemHolder);
                 _item.transform.position = _rectTransform.position;
-                _item.transform.localScale = Vector3.one;
+                _item.transform.localScale = _prevItemScale;
             }
         }
 
@@ -72,6 +73,7 @@ namespace UI
         public void Receive(GameObject item)
         {
             _item = item;
+            _prevItemScale = item.transform.localScale;
             var rectTransform = _item.transform as RectTransform;
             rectTransform.SetParent(transform);
             rectTransform.anchoredPosition = Vector2.zero;
