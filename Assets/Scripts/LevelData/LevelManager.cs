@@ -9,6 +9,7 @@ namespace LevelData
     {
         [SerializeField] private LevelObject _level; // TODO load dynamically
 
+        [SerializeField] private SpriteRenderer _outsideSprite;
         [SerializeField] private Transform _categoriesParent;
         [SerializeField] private List<MachinesEnumHolder> _machines;
 
@@ -25,6 +26,8 @@ namespace LevelData
 
         public void Load(LevelObject level)
         {
+            _outsideSprite.sprite = level._outsideSprite;
+
             // disable empty category button
             foreach (var holder in _categoriesParent.GetComponentsInChildren<CategoriesEnumHolder>())
             {

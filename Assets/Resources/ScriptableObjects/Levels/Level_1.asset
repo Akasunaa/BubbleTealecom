@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f4ddb4b21f542608230da9ac4974187, type: 3}
   m_Name: Level_1
   m_EditorClassIdentifier: 
+  _outsideSprite: {fileID: 21300000, guid: 40bb18153031f19468bd5210df804afb, type: 3}
   _fruits: 00000000
   _teas: 00000000
   _bubbles: 01000000
