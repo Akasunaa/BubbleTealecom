@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pottapioca_0: 1991626483567427974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

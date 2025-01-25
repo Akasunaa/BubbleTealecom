@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 706307ed440c73547ad3eef79c1ecd81
+guid: b736d3bfed252c5769b14c0340b5d62e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4422562697918409503
-    second: TasFluffyLeaf_0
+      213: -6388163620815734071
+    second: humain2_0
+  - first:
+      213: 4885868583803083056
+    second: humain2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,33 +100,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -139,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TasFluffyLeaf_0
+      name: humain2_0
       rect:
         serializedVersion: 2
-        x: 102
-        y: 80
-        width: 2824
-        height: 2824
+        x: 1540
+        y: 0
+        width: 1826
+        height: 3933
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e41ea178a6ef92c0800000000000000
-      internalID: -4422562697918409503
+      spriteID: 9ca7436680fa857a0800000000000000
+      internalID: -6388163620815734071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: humain2_1
+      rect:
+        serializedVersion: 2
+        x: 3556
+        y: 1852
+        width: 178
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039d2dc27971ec340800000000000000
+      internalID: 4885868583803083056
       vertices: []
       indices: 
       edges: []
@@ -173,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      TasFluffyLeaf_0: -4422562697918409503
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
