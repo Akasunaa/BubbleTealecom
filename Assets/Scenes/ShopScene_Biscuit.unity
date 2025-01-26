@@ -234,8 +234,8 @@ Transform:
   m_GameObject: {fileID: 116313091}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.63, y: -2.7184, z: 0}
-  m_LocalScale: {x: 1, y: 1.6952055, z: 1}
+  m_LocalPosition: {x: -3.5, y: -1.76, z: 0}
+  m_LocalScale: {x: 0.09, y: 0.10800001, z: 0.09}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1533518098}
@@ -284,7 +284,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 5924233642016195790, guid: f64900eade526f54488469c978864667, type: 3}
   m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -345,13 +345,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 17.08, y: 19.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 14, y: 19}
   m_EdgeRadius: 0
 --- !u!1 &231921946
 GameObject:
@@ -2814,6 +2814,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1125884448}
   m_SourcePrefab: {fileID: 100100000, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+--- !u!114 &1463496593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3652089198418379048, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+  m_PrefabInstance: {fileID: 1958472267}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2a7b57dd4d4b3490202163cdc140f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1466345920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3097,6 +3108,7 @@ GameObject:
   - component: {fileID: 1480193686}
   - component: {fileID: 1480193685}
   - component: {fileID: 1480193684}
+  - component: {fileID: 1480193687}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -3211,6 +3223,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480193682}
   m_CullTransparentMesh: 1
+--- !u!114 &1480193687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480193682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97829a1535eb4dc88f52c28251878bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _machine: {fileID: 2111770777}
 --- !u!114 &1521749488 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2003693373335692557, guid: d7f69aa51cd6fe742a8cbf9f9006fc97, type: 3}
@@ -4815,6 +4840,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 4ead52fdefa98a84bb013bfc7a3c5d21, type: 3}
   - sound: 4
     audioClip: {fileID: 8300000, guid: 95aeec979ac068144abab94b59e1ae82, type: 3}
+  - sound: 5
+    audioClip: {fileID: 8300000, guid: ca39b62df42954d4080f6c1f847e7b5d, type: 3}
   canPlayStep: 1
   mainMusic: {fileID: 0}
   ambiantMusic: {fileID: 0}
@@ -5928,6 +5955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d41f7ef583f3c546bd7fe8d25754058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mainItemSlot: {fileID: 1463496593}
 --- !u!1 &2138348809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6105,6 +6133,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.69
       objectReference: {fileID: 0}
+    - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
+      propertyPath: clients.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
+      propertyPath: 'clients.Array.data[2]'
+      value: 
+      objectReference: {fileID: 458481278830898966, guid: 515f37f28e64dda4181c56daf0912aca, type: 3}
+    - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
+      propertyPath: 'clients.Array.data[3]'
+      value: 
+      objectReference: {fileID: 458481278830898966, guid: cf01d3b2959016f468aaf8119af2e566, type: 3}
+    - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
+      propertyPath: 'clients.Array.data[4]'
+      value: 
+      objectReference: {fileID: 458481278830898966, guid: 044bbfc5b5316524a952134457c6ba52, type: 3}
     - target: {fileID: 1271610427107454675, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
       propertyPath: m_Name
       value: ClientManager

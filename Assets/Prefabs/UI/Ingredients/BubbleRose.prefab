@@ -101,4 +101,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33edbdb554b248df961f75bc458c1b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient_state: {fileID: 11400000, guid: 35ac345eb590a10488009b9221acba31, type: 2}
+  ingredientState: {fileID: 11400000, guid: 35ac345eb590a10488009b9221acba31, type: 2}
