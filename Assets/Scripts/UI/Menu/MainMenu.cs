@@ -1,5 +1,6 @@
 using System;
 using DG.Tweening;
+using LevelData;
 using UnityEngine;
 
 public class MainMenu : MonoBehaviour
@@ -16,6 +17,14 @@ public class MainMenu : MonoBehaviour
         #if UNITY_WEBGL
             _quitButton.SetActive(false);
         #endif
+    }
+
+    private void OnEnable()
+    {
+        if (LevelDataHolder.CurrentLevel != null)
+        {
+            ToggleMenus();
+        }
     }
 
     public void ToggleMenus()
