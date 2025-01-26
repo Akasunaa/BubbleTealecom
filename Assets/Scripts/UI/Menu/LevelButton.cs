@@ -44,6 +44,7 @@ namespace UI.Menu
             {
                 // TODO display message
                 LevelDataHolder.CurrentLevel = _level;
+                SoundAssets.instance.PlayNextMusic(LevelDataHolder.CurrentDay);
                 SceneManager.LoadScene("ShopScene");
             }
         }

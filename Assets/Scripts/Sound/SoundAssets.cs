@@ -1,5 +1,6 @@
+using NUnit.Framework;
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,12 +10,12 @@ public class SoundAssets : MonoBehaviour
 
     public SoundAudioClip[] soundAudioClipsArray;
 
-    public AudioClip mainMusic;
-    public AudioClip ambiantMusic;
-    private AudioSource musicSource;
+    public AudioClip menuMusic;
+    public AudioClip levelOneMusic;
+    public AudioClip levelTwoMusic;
+    public AudioClip levelThreeMusic;
 
-    public AudioClip StartMusic;
-    public AudioClip EndMusic;
+    private AudioSource musicSource;
 
     public float musicVolumeModifier = 0.35f;
     public float sfxVolumeModifier = 0.5f;
@@ -50,21 +51,35 @@ public class SoundAssets : MonoBehaviour
         musicSource.volume = 1f;
         mainMusicVolume = 1f;
         mainSFXVolume = 0.5f;
-        PlayMainMusic();
+        PlayMenuMusic();
     }
-    internal void PlayStartMusic()
+    public void PlayMenuMusic()
     {
-        StartCoroutine(UpdateMusicWithFade(musicSource, StartMusic, 0.5f));
-    }
-
-    internal void PlayMainMusic()
-    {
-        StartCoroutine(UpdateMusicWithFade(musicSource, mainMusic, 0f));
+        StartCoroutine(StopMusicWithFade(0.2f));
+        StartCoroutine(UpdateMusicWithFade(musicSource, menuMusic, 0.5f));
     }
 
-    internal void PlayGameOverMusic()
+    public void PlayLevelOneMusic()
     {
-        StartCoroutine(UpdateMusicWithFade(musicSource, EndMusic, 0.5f));
+        StartCoroutine(UpdateMusicWithFade(musicSource, levelOneMusic, 0.5f));
+    }
+
+    public void PlayLevelTwoMusic()
+    {
+        StartCoroutine(UpdateMusicWithFade(musicSource, levelTwoMusic, 0.5f));
+    }
+
+    public void PlayLevelThreeMusic()
+    {
+        StartCoroutine(UpdateMusicWithFade(musicSource, levelThreeMusic, 0.5f));
+    }
+
+    public void PlayNextMusic(int day)
+    {
+        StartCoroutine(StopMusicWithFade(0.2f));
+        if(day < 3) PlayLevelOneMusic();
+        else if (day < 5) PlayLevelTwoMusic();
+        else PlayLevelThreeMusic();
     }
 
     public void PlayMusic(AudioClip musicClip)
@@ -114,27 +129,5 @@ public class SoundAssets : MonoBehaviour
     public void StopMusic()
     {
         StartCoroutine(StopMusicWithFade(1f));
-    }
-
-    public void PlayShakerSound()
-    {
-        SoundManager.PlaySound(SoundManager.Sound.Shaker, mainSFXVolume * sfxVolumeModifier);
-    }
-
-    public void PlayHumanSound()
-    {
-        int soundToPlay = Random.Range(0, 2);
-       
-        switch (soundToPlay)
-        {
-            case 0:
-                SoundManager.PlaySound(SoundManager.Sound.Humain1, mainSFXVolume);
-                break;
-            case 1:
-                SoundManager.PlaySound(SoundManager.Sound.Humain2, mainSFXVolume);
-                break;
-            default:
-                break;
-        }
     }
 }
