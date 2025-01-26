@@ -1,5 +1,6 @@
 fileFormatVersion: 2
-guid: ec59acd66a335314da1f0f4ec2e7d2a9
+guid: b1cc55ce069d34d46a0af040c42baa9b
+TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7240720617370494441
@@ -96,19 +97,6 @@ guid: ec59acd66a335314da1f0f4ec2e7d2a9
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -121,22 +109,6 @@ guid: ec59acd66a335314da1f0f4ec2e7d2a9
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> e57fd8a (Add change of music between levels)
   spriteSheet:
     serializedVersion: 2
     sprites:
