@@ -77,8 +77,8 @@ public class SoundAssets : MonoBehaviour
     public void PlayNextMusic(int day)
     {
         StartCoroutine(StopMusicWithFade(0.2f));
-        if(day < 3) PlayLevelOneMusic();
-        else if (day < 5) PlayLevelTwoMusic();
+        if(day < 2) PlayLevelOneMusic();
+        else if (day < 4) PlayLevelTwoMusic();
         else PlayLevelThreeMusic();
     }
 
