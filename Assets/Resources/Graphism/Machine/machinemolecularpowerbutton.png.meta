@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      machinemolecularpowerbutton_0: -3115521224837721100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
