@@ -4,10 +4,19 @@ using System.Linq;
 using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClientSlime : Client
 {
     [SerializeField] private IngredientState _ingredientInStomac;
+    [SerializeField] private Transform _ingredientInStomacTransform;
+
+    public override void SetupClientSpecific()
+    {
+        GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleFirstElementTransform);
+        clientElement.GetComponent<Image>().sprite = GetSpriteFrom(_ingredientInStomac);
+        clientElement.GetComponent<Image>().transform.position = _ingredientInStomacTransform.position;
+    }
 
     public override Sprite FindWrongItem(ClientRecipeElements clientRecipeElements, Recipe glassRecipe)
     {

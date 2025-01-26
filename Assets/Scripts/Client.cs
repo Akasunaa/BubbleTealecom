@@ -27,6 +27,12 @@ public class Client : MonoBehaviour
         _timer = timerMax;
         recipe = ToRecipe(recipeDisplayElements);
         DisplayRecipe(recipeDisplayElements);
+        SetupClientSpecific();
+    }
+
+    public virtual void SetupClientSpecific()
+    {
+        
     }
 
     public virtual Recipe ToRecipe(ClientRecipeElements recipeElements)
