@@ -166,7 +166,11 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+  entrySound: 6
+  correctAudio: 6
+  incorrectAudio: 6
   _ingredientInStomac: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
+  _ingredientInStomacTransform: {fileID: 0}
 --- !u!114 &957940538550477781
 MonoBehaviour:
   m_ObjectHideFlags: 0
