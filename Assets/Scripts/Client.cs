@@ -41,6 +41,7 @@ public class Client : MonoBehaviour
 
     public virtual Recipe ToRecipe(ClientRecipeElements recipeElements)
     {
+        SoundManager.PlaySound(entrySound);
         return recipeElements.ToRecipe();
     }
 
@@ -71,6 +72,7 @@ public class Client : MonoBehaviour
         bool isGoodRecipe = Recipe.CompareIngredientList(recipe.finalIngredientStates, otherRecipe.finalIngredientStates);
         if (isGoodRecipe)
         {
+            SoundManager.PlaySound(correctAudio);
             ClientManager.Instance.ClientHappy();
         }
         else
@@ -87,6 +89,7 @@ public class Client : MonoBehaviour
 
     private void UnHappyClient()
     {
+        SoundManager.PlaySound(incorrectAudio);
         ClientManager.Instance.ClientUnHappy();
     }
 
