@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recipeDisplayElements: {fileID: 11400000, guid: 7ab4208156d0ebf44845f22523914309, type: 2}
-  timerMax: 5
+  timerMax: 25
   timerFillImage: {fileID: 3674085021553774171}
   bubbleRecipe: {fileID: 2434923002370888994}
   bubbleRecipeAnswer: {fileID: 439648986225859362}

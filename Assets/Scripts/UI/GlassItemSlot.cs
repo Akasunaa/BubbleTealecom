@@ -24,7 +24,7 @@ namespace UI
             var ingredient = item.GetComponent<Ingredient>();
             if (ingredient)
             {
-                _recipe.finalIngredientStates.Add(ingredient.ingredient_state);
+                _recipe.finalIngredientStates.Add(ingredient.ingredientState);
             }
             else
             {
