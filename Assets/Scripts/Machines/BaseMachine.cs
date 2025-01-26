@@ -9,6 +9,8 @@ namespace Machines
     /// </summary>
     public class BaseMachine : MonoBehaviour, IMachineCommand
     {
+        protected bool _working;
+
         public virtual void MachineExecuteButtonCalled()
         {
             print("MACHINE EXECUTE CALLED");

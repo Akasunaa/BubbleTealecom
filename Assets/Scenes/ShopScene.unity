@@ -1341,7 +1341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1997735316578758560, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2778085129969789364, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_Name
@@ -1542,6 +1542,17 @@ MonoBehaviour:
   _tourniquetButton: {fileID: 869522872}
   _rotationDegrees: 45
   _melangeIngredient: {fileID: 4828350776933554981, guid: d5eaeb9e280b10c4888e31347c02291d, type: 3}
+--- !u!114 &343408792 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3526874943984262701, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+  m_PrefabInstance: {fileID: 343408784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343408787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d929982fc986141ae539fd0dc897e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &392880141 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1000680378852055326, guid: 49416ec5b2aabc94cb12735707a3a246, type: 3}
@@ -7625,6 +7636,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 95aeec979ac068144abab94b59e1ae82, type: 3}
   - sound: 5
     audioClip: {fileID: 8300000, guid: ca39b62df42954d4080f6c1f847e7b5d, type: 3}
+  - sound: 3
+    audioClip: {fileID: 8300000, guid: 14377574911de1248950859f27ff7392, type: 3}
   canPlayStep: 1
   mainMusic: {fileID: 0}
   ambiantMusic: {fileID: 0}
@@ -8314,7 +8327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786a8f410ef24931ae0a8f699cd482e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  value: 2
 --- !u!114 &2005333025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8327,7 +8340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df729f8c4e9da7f49aecd8b4d67ed74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiWindow: {fileID: 1098423134}
+  _uiWindow: {fileID: 343408792}
 --- !u!60 &2005333026
 PolygonCollider2D:
   m_ObjectHideFlags: 0

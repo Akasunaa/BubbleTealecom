@@ -21,6 +21,10 @@ namespace Machines
         public override void MachineExecuteButtonCalled()
         {
             base.MachineExecuteButtonCalled();
+            if (_working)
+            {
+                return;
+            }
             //we recover the item
             _curItemContained = _mainItemSlot.GetItem();
             if (_curItemContained != null && _curItemContained.GetComponent<GlassItemSlot>() 
