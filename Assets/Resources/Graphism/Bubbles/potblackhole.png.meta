@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9b0195c09416e7a49920f138575af42a
+guid: f3281b410d821b74fb5463d50ebf0550
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -482885315589202539
-    second: day04_0
+      213: -8038025832074626003
+    second: potblackhole_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: day04_0
+      name: potblackhole_0
       rect:
         serializedVersion: 2
-        x: 2238
-        y: 956
-        width: 1602
-        height: 1204
+        x: 0
+        y: 0
+        width: 3000
+        height: 3000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59d9d092d527c49f0800000000000000
-      internalID: -482885315589202539
+      spriteID: d2c37cfc712337090800000000000000
+      internalID: -8038025832074626003
       vertices: []
       indices: 
       edges: []
