@@ -136,7 +136,7 @@ MonoBehaviour:
   transformationImageList: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
   bubbleFirstElementTransform: {fileID: 7834159540968126166}
   bubbleAnswerElementTransform: {fileID: 484620804396546863}
-  delimiterSprite: {fileID: 6843012731616801798, guid: 36efc0526044e0c48a1a713786810b1a, type: 3}
+  delimiterSprite: {fileID: 2828182002308998896, guid: 16271d9b34b85924cb8d60fb2a272f70, type: 3}
   timerGradient:
     serializedVersion: 2
     key0: {r: 0, g: 1, b: 0.055066347, a: 1}
