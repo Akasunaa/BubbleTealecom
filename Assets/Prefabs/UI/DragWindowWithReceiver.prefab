@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 397776503949049952}
   - component: {fileID: 5033012558922303439}
   - component: {fileID: 3526874943984262701}
-  - component: {fileID: 5766321683188460774}
   m_Layer: 5
   m_Name: DragWindowWithReceiver
   m_TagString: Untagged
@@ -92,19 +91,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d929982fc986141ae539fd0dc897e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5766321683188460774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997735316578758560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a607f41da81d411478322370855c721c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _mainItemSlot: {fileID: 3652089198418379048}
 --- !u!1 &2778085129969789364
 GameObject:
   m_ObjectHideFlags: 0
