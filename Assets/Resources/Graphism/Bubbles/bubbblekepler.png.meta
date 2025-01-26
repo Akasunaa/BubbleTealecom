@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubbblekepler_0: 5045064925828705639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

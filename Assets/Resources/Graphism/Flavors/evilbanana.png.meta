@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6977618ee96a3a842a1c7edea145cb7c
+guid: 82bea0e34ad422c43a21127842ed77c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3528012520386723015
-    second: potkepler_0
+      213: 6135983211661705759
+    second: evilbanana_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: potkepler_0
+      name: evilbanana_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3000
-        height: 3000
+        x: 5
+        y: 386
+        width: 1489
+        height: 728
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 933083f0e4bf90fc0800000000000000
-      internalID: -3528012520386723015
+      spriteID: f124bde9834672550800000000000000
+      internalID: 6135983211661705759
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      potkepler_0: -3528012520386723015
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
