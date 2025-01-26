@@ -1,4 +1,6 @@
+using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI
 {
@@ -6,6 +8,13 @@ namespace UI
     {
         [SerializeField] private Transform _slotList;
         private Recipe _recipe = new Recipe();
+
+        private bool _isShaken = false;
+        [SerializeField] private Image  _image;
+        [SerializeField] private Sprite _filledSprite;
+        [SerializeField] private Sprite _emptySprite;
+
+        public bool GetIsShaken() {  return _isShaken; }
 
         public override void Receive(GameObject item)
         {
@@ -41,6 +50,21 @@ namespace UI
                 Destroy(_slotList.GetChild(i).gameObject);
             }
             _recipe = new Recipe();
+            _image.sprite = _emptySprite;
+            _isShaken=false;
+        }
+
+        public void ShakeGlass()
+        {
+            _isShaken = true;
+            //we clear the shake :
+            int n = _slotList.childCount;
+            for (int i = n - 1; i >= 0; i--)
+            {
+                Destroy(_slotList.GetChild(i).gameObject);
+            }
+            //we add the liquid sprite :
+            _image.sprite = _filledSprite;
         }
     }
 }

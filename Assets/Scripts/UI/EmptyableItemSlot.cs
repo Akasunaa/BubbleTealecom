@@ -42,7 +42,6 @@ namespace UI
                     drag.OnDrag(eventData);
                 }
             }
-            Init();
         }
 
         public void OnPointerDown(PointerEventData eventData)
