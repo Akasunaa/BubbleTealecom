@@ -90,6 +90,9 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+  entrySound: 1
+  correctAudio: 1
+  incorrectAudio: 1
 --- !u!114 &5985489045123020658
 MonoBehaviour:
   m_ObjectHideFlags: 0

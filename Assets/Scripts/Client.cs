@@ -21,6 +21,10 @@ public class Client : MonoBehaviour
     public Transform bubbleAnswerElementTransform;
     public Sprite delimiterSprite;
     public Gradient timerGradient;
+    public SoundManager.Sound entrySound;
+    public SoundManager.Sound correctAudio;
+    public SoundManager.Sound incorrectAudio;
+
 
     private void Start()
     {
