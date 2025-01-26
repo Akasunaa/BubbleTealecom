@@ -9635,19 +9635,23 @@ PrefabInstance:
       value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
+      propertyPath: _clientPrefab
+      value: 
+      objectReference: {fileID: 458481278830898966, guid: c64f2edfdd8cbcb4497d54442807a44b, type: 3}
+    - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
       propertyPath: clients.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
-      propertyPath: clients.Array.data[2]
+      propertyPath: 'clients.Array.data[2]'
       value: 
       objectReference: {fileID: 458481278830898966, guid: 515f37f28e64dda4181c56daf0912aca, type: 3}
     - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
-      propertyPath: clients.Array.data[3]
+      propertyPath: 'clients.Array.data[3]'
       value: 
       objectReference: {fileID: 458481278830898966, guid: cf01d3b2959016f468aaf8119af2e566, type: 3}
     - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
-      propertyPath: clients.Array.data[4]
+      propertyPath: 'clients.Array.data[4]'
       value: 
       objectReference: {fileID: 458481278830898966, guid: 044bbfc5b5316524a952134457c6ba52, type: 3}
     - target: {fileID: 1271610427107454675, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Client_1_1
+  m_EditorClassIdentifier: Assembly-CSharp:LevelData:ClientData
+  _sprite: {fileID: -3108465536558337904, guid: aec77269d97bdc3e4b4a260577580565, type: 3}
+  _recipe: {fileID: 11400000, guid: b110f42a6460f0740917e1867ccfcc2b, type: 2}
+  _ingredientsLanguage: {fileID: 11400000, guid: a67a0c6ab77631c4bb73da3dac5075d5, type: 2}
+  _transformationLanguage: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
+  _timer: 25

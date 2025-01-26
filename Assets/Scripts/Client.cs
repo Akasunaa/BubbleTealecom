@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using LevelData;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,13 +25,25 @@ public class Client : MonoBehaviour
     public SoundManager.Sound entrySound;
     public SoundManager.Sound correctAudio;
     public SoundManager.Sound incorrectAudio;
+    public SpriteRenderer clientImage;
 
+    public void LoadData(ClientData data)
+    {
+        clientImage.sprite = data._sprite;
+
+        recipeDisplayElements = data._recipe;
+        recipe = ToRecipe(recipeDisplayElements);
+        DisplayRecipe(recipeDisplayElements);
+
+        ingredientStateImageList = data._ingredientsLanguage;
+        transformationImageList = data._transformationLanguage;
+
+        timerMax = data._timer;
+        _timer = timerMax;
+    }
 
     private void Start()
     {
-        _timer = timerMax;
-        recipe = ToRecipe(recipeDisplayElements);
-        DisplayRecipe(recipeDisplayElements);
         SetupClientSpecific();
     }
 
@@ -101,36 +114,26 @@ public class Client : MonoBehaviour
 
     private void DisplayRecipe(ClientRecipeElements clientsRecipeElements)
     {
-        float translateX = 0.0f;
         for (var i = 0; i < clientsRecipeElements.recipeElements.Count; i++)
         {
             ClientRecipeElement clientRecipeElement = clientsRecipeElements.recipeElements[i];
             
             foreach (var ingredientState in clientRecipeElement.ingredientStates)
             {
-                GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleRecipe.transform);
+                GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleFirstElementTransform);
                 clientElement.GetComponent<Image>().sprite = GetSpriteFrom(ingredientState);
-                clientElement.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
-                clientElement.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
-                translateX -= clientElement.GetComponent<Image>().transform.lossyScale.x * clientElement.GetComponent<Image>().rectTransform.sizeDelta.x + 0.02f;
             }
 
             if (clientRecipeElement.transform != Transformation.None)
             {
-                GameObject clientElementTransform = Instantiate(clientRecipeElementPrefab, bubbleRecipe.transform);
+                GameObject clientElementTransform = Instantiate(clientRecipeElementPrefab, bubbleFirstElementTransform);
                 clientElementTransform.GetComponent<Image>().sprite = GetSpriteFrom(clientRecipeElement.transform);
-                clientElementTransform.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
-                clientElementTransform.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
-                translateX -= clientElementTransform.GetComponent<Image>().transform.lossyScale.x * clientElementTransform.GetComponent<Image>().rectTransform.sizeDelta.x + 0.02f;
             }
 
             if (i < clientsRecipeElements.recipeElements.Count - 1)
             {
-                GameObject clientElementDelimiter = Instantiate(clientRecipeElementPrefab, bubbleRecipe.transform);
+                GameObject clientElementDelimiter = Instantiate(clientRecipeElementPrefab, bubbleFirstElementTransform);
                 clientElementDelimiter.GetComponent<Image>().sprite = delimiterSprite;
-                clientElementDelimiter.GetComponent<Image>().transform.position = bubbleFirstElementTransform.position;
-                clientElementDelimiter.GetComponent<Image>().rectTransform.Translate(translateX, 0.0f, 0.0f);
-                translateX -= clientElementDelimiter.GetComponent<Image>().transform.lossyScale.x * clientElementDelimiter.GetComponent<Image>().rectTransform.sizeDelta.x + 0.02f;
             }
         }
     }
