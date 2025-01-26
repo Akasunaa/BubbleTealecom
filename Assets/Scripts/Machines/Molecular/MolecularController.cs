@@ -109,6 +109,8 @@ namespace Machines
             yield return new WaitForSeconds(clip.length);
             //after delay, enable melange object
             newMelange.SetActive(true);
+            //we reset the tourniquet
+            //TODO : RESET TOURNIQUET
             _working = false;
         }
 
