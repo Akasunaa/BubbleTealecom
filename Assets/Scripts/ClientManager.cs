@@ -35,6 +35,7 @@ public class ClientManager : MonoBehaviour
         {
             return;
         }
+        SoundManager.PlaySound(SoundManager.Sound.Doorbell, 0.5f);
         GameObject nextClient = clients[0];
         clients.RemoveAt(0);
         currentClient = Instantiate(nextClient);

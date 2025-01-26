@@ -7,13 +7,22 @@ public static class SoundManager
         None,
         Humain1,
         Humain2,
-        MolecularReassembler,
-        Shaker,
-        Slicer,
+        Humain3,
+        Infecte1,
+        Infecte2,
+        Slime1,
+        Slime2,
+        Slime3,
+        Doorbell,
+        Window,
+        Trash,
         SwitchButton,
         Error,
-        Doorbell,
-        Window
+        Shaker,
+        Slicer,
+        SlicerLever,
+        MolecularReassembler,
+        Tourniquet
     }
 
     public static void PlaySound(Sound sound, float volume = 1f)
