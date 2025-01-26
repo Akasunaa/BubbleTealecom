@@ -7634,19 +7634,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundAudioClipsArray:
-  - sound: 7
-    audioClip: {fileID: 8300000, guid: 4ead52fdefa98a84bb013bfc7a3c5d21, type: 3}
-  - sound: 4
-    audioClip: {fileID: 8300000, guid: 95aeec979ac068144abab94b59e1ae82, type: 3}
-  - sound: 5
-    audioClip: {fileID: 8300000, guid: ca39b62df42954d4080f6c1f847e7b5d, type: 3}
+  - sound: 1
+    audioClip: {fileID: 8300000, guid: 4e473af2a03e5c147ad3cc700d3790a1, type: 3}
+  - sound: 2
+    audioClip: {fileID: 8300000, guid: f6fbfa8c750e7e84c91a150e288d73dd, type: 3}
   - sound: 3
-    audioClip: {fileID: 8300000, guid: 14377574911de1248950859f27ff7392, type: 3}
-  - sound: 17
-    audioClip: {fileID: 8300000, guid: 14377574911de1248950859f27ff7392, type: 3}
-  - sound: 15
-    audioClip: {fileID: 8300000, guid: ca39b62df42954d4080f6c1f847e7b5d, type: 3}
+    audioClip: {fileID: 8300000, guid: 03fa386cb3cc07d4e8c784197c13a0c1, type: 3}
+  - sound: 4
+    audioClip: {fileID: 8300000, guid: 7de44bc0b8ce9c444a7e0b1eef63c21c, type: 3}
+  - sound: 5
+    audioClip: {fileID: 8300000, guid: e9cfec7a9ae22e4468551dc57150eb1a, type: 3}
+  - sound: 6
+    audioClip: {fileID: 8300000, guid: ce09e4f78401b2c4db2db1f530ea8b85, type: 3}
+  - sound: 7
+    audioClip: {fileID: 8300000, guid: deb8023d58d83e94186e2283cd70a21a, type: 3}
+  - sound: 8
+    audioClip: {fileID: 8300000, guid: e27bb9c46c201994eab71c4a2a7248b3, type: 3}
+  - sound: 9
+    audioClip: {fileID: 8300000, guid: feea7239de2448a43947e4fb3cc48834, type: 3}
+  - sound: 10
+    audioClip: {fileID: 8300000, guid: 330802e76561fc3439f59c762cc7b625, type: 3}
+  - sound: 11
+    audioClip: {fileID: 8300000, guid: b67dda8436950b54aa471381b24fcd98, type: 3}
+  - sound: 12
+    audioClip: {fileID: 8300000, guid: 3ef45520508eff04587bbdaeccbe8493, type: 3}
   - sound: 13
+    audioClip: {fileID: 8300000, guid: 4ead52fdefa98a84bb013bfc7a3c5d21, type: 3}
+  - sound: 14
+    audioClip: {fileID: 8300000, guid: 95aeec979ac068144abab94b59e1ae82, type: 3}
+  - sound: 16
+    audioClip: {fileID: 8300000, guid: 4ead52fdefa98a84bb013bfc7a3c5d21, type: 3}
+  - sound: 17
+    audioClip: {fileID: 8300000, guid: 4ead52fdefa98a84bb013bfc7a3c5d21, type: 3}
+  - sound: 18
+    audioClip: {fileID: 8300000, guid: 4ead52fdefa98a84bb013bfc7a3c5d21, type: 3}
+  - sound: 18
     audioClip: {fileID: 8300000, guid: 4ead52fdefa98a84bb013bfc7a3c5d21, type: 3}
   canPlayStep: 1
   mainMusic: {fileID: 0}
