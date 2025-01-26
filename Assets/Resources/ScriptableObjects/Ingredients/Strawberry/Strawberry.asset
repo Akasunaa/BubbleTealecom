@@ -22,3 +22,4 @@ MonoBehaviour:
     newIngredientState: {fileID: 0}
   transformations: 
   oldIngredientState: []
+  color: {r: 1, g: 0, b: 0.33103228, a: 1}

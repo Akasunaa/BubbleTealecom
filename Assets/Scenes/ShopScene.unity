@@ -1541,6 +1541,7 @@ MonoBehaviour:
   _outputSlot: {fileID: 556504616}
   _tourniquetButton: {fileID: 869522872}
   _rotationDegrees: 45
+  _melangeIngredient: {fileID: 4828350776933554981, guid: d5eaeb9e280b10c4888e31347c02291d, type: 3}
 --- !u!224 &392880141 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1000680378852055326, guid: 49416ec5b2aabc94cb12735707a3a246, type: 3}

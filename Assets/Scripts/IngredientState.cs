@@ -22,6 +22,9 @@ public class IngredientState : ScriptableObject
     [HideInInspector] public List<Transformation> transformations = new List<Transformation>();
     [HideInInspector] public List<IngredientState> oldIngredientState = new List<IngredientState>();
 
+    [Header("Ingredient Visual Data")]
+    public Color color;
+
     [CanBeNull]
     public IngredientState Transform(Transformation transformation, List<IngredientState> otherIngredients = null)
     {

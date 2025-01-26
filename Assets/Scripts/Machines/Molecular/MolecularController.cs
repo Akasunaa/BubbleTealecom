@@ -19,6 +19,9 @@ namespace Machines
         private Vector3 _tourniquetStartRotation;
         [SerializeField] private float _rotationDegrees = 45;
 
+        [Header("Output")]
+        [SerializeField] private GameObject _melangeIngredient;
+
         private void OnValidate()
         {
             Assert.IsNotNull(_tourniquetButton);
@@ -62,6 +65,13 @@ namespace Machines
                 {
                     print("YES !");
                     //we generate the combined ingredient in the outputslot
+                    IngredientState ingredientState1 = _itemSlot1.GetItem().GetComponent<Ingredient>().ingredientState;
+                    IngredientState ingredientState2 = _itemSlot2.GetItem().GetComponent<Ingredient>().ingredientState;
+                    GameObject newMelange = Instantiate(_melangeIngredient);
+                    newMelange.GetComponent<MelangeIngredientController>().CreateMelange(ingredientState1, ingredientState2);
+                    newMelange.AddComponent<CanvasGroup>().blocksRaycasts = false;
+                    newMelange.transform.position = _outputSlot.transform.position;
+                    _outputSlot.Receive(newMelange);
                 }
                 else
                 {
