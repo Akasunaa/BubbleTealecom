@@ -40,6 +40,10 @@ public class Client : MonoBehaviour
 
         timerMax = data._timer;
         _timer = timerMax;
+
+        entrySound = data._entrySound;
+        correctAudio = data._correctAudio;
+        incorrectAudio = data._incorrectAudio;
     }
 
     private void Start()

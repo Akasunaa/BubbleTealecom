@@ -14,5 +14,8 @@ namespace LevelData
         public IngredientStateImageList _ingredientsLanguage;
         public TransformationImageList _transformationLanguage;
         public float _timer;
+        public SoundManager.Sound _entrySound;
+        public SoundManager.Sound _correctAudio;
+        public SoundManager.Sound _incorrectAudio;
     }
 }
