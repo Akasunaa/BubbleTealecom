@@ -19,9 +19,9 @@ MonoBehaviour:
   _timer: 60
   _entrySound: 7
   _correctAudio: 6
-  _type: 1
-  ingredientInStomac: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
   _incorrectAudio: 25
+  _type: 1
+  ingredientInStomac: {fileID: 0}
   _entryVolume: 0.3
   _correctVolume: 0.5
   _incorrectVolume: 1

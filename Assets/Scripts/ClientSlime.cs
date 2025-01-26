@@ -13,7 +13,11 @@ public class ClientSlime : Client
 
     public override void SetupClientSpecific()
     {
-        GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleFirstElementTransform);
+        if (_ingredientInStomac == null)
+        {
+            return;
+        }
+        GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleFirstElementTransform.parent);
         clientElement.GetComponent<Image>().sprite = GetSpriteFrom(_ingredientInStomac);
         clientElement.GetComponent<Image>().transform.position = _ingredientInStomacTransform.position;
     }

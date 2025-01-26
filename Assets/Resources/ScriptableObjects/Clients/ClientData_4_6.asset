@@ -21,7 +21,7 @@ MonoBehaviour:
   _correctAudio: 7
   _incorrectAudio: 8
   _type: 1
-  ingredientInStomac: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
+  ingredientInStomac: {fileID: 11400000, guid: 055a6c61606af204196d5f12120cd2c9, type: 2}
   _entryVolume: 0.3
   _correctVolume: 1
   _incorrectVolume: 1

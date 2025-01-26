@@ -18,10 +18,10 @@ MonoBehaviour:
   _transformationLanguage: {fileID: 11400000, guid: 90fcf28cfd721474caa531cc21e2be5e, type: 2}
   _timer: 60
   _entrySound: 6
-  _type: 1
-  ingredientInStomac: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
   _correctAudio: 25
   _incorrectAudio: 7
+  _type: 1
+  ingredientInStomac: {fileID: 11400000, guid: 55a75becab56ad14ea62d2304f1356bf, type: 2}
   _entryVolume: 1
   _correctVolume: 1
   _incorrectVolume: 0.3
