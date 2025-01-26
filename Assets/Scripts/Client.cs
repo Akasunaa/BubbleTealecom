@@ -99,6 +99,7 @@ public class Client : MonoBehaviour
             GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleRecipeAnswer.transform);
             clientElement.GetComponent<Image>().sprite = firstWrongSprite;
             clientElement.GetComponent<Image>().transform.position = bubbleAnswerElementTransform.position;
+            clientElement.transform.localScale = new Vector3(2, 2, 1);
             bubbleRecipeAnswer.SetActive(true);
             SoundManager.PlaySound(incorrectAudio);
             Invoke(nameof(UnHappyClient), 3.0f);
