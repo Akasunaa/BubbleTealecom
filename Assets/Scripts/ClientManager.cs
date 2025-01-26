@@ -1,3 +1,4 @@
+using LevelData;
 using System;
 using System.Collections.Generic;
 using Unity.Collections;
@@ -33,9 +34,8 @@ public class ClientManager : MonoBehaviour
     {
         if (clients.Count == 0)
         {
-            print("go to main scene");
             SceneManager.LoadScene("MainMenu");
-            print("todo : incr ++");
+            LevelDataHolder.CurrentDay = LevelDataHolder.CurrentDay + 1;
             return;
         }
         SoundManager.PlaySound(SoundManager.Sound.Doorbell, 0.5f);
