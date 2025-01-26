@@ -38,7 +38,7 @@ public static class SoundManager
         if (sound == Sound.None) return;
 
         GameObject soundGameObject = new GameObject("Sound");
-        soundGameObject.tag = "Sound";
+        // soundGameObject.tag = "Sound";
         AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
         audioSource.clip = GetAudioClip(sound);
         audioSource.volume = volume;

@@ -42,7 +42,7 @@ public class ClientManager : MonoBehaviour
         if (clients.Count == 0)
         {
             LevelDataHolder.CurrentDay = LevelDataHolder.CurrentDay + 1;
-            GameObject.FindGameObjectsWithTag("Sound").ToList().ForEach(x => Destroy(x));
+            // GameObject.FindGameObjectsWithTag("Sound").ToList().ForEach(x => Destroy(x));
             SoundAssets.instance.PlayMenuMusic();
             SceneManager.LoadScene("MainMenu");
             return;
