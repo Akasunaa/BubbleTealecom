@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b177a42c224270b9d5cebdec28cf2a, type: 3}
+  m_Name: SlimeLanguageTransformation
+  m_EditorClassIdentifier: 
+  transformationImages:
+  - transformation: 1
+    image: {fileID: 761100573506273824, guid: 58050a11632b86740a13dfe3ad57ce63, type: 3}
+  - transformation: 2
+    image: {fileID: 3094009027305210438, guid: 64ff6da6cbd666545b6da40c36d11d43, type: 3}
+  - transformation: 3
+    image: {fileID: 0}
+  - transformation: 3
+    image: {fileID: 0}

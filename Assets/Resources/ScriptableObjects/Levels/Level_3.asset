@@ -19,4 +19,11 @@ MonoBehaviour:
   _toppings: 0000000001000000
   _machines: 000000000100000002000000
   _clients:
-  - {fileID: 458481278830898966, guid: 3090f03266c2038418b1f4d90a4d56b1, type: 3}
+  - {fileID: 11400000, guid: fe11e9f09113fdc4481489665d02915e, type: 2}
+  - {fileID: 11400000, guid: 7d13e6821409b234fa857902fabd676e, type: 2}
+  - {fileID: 11400000, guid: bea03665725cbcf428e27068dc40b6b5, type: 2}
+  - {fileID: 11400000, guid: ff3a691c9c3d2d54d9d709abb5902dbe, type: 2}
+  - {fileID: 11400000, guid: 6c909943e6aa319408bcd4565999df90, type: 2}
+  - {fileID: 11400000, guid: 305bed647305b844cbd5cb5eb1a07935, type: 2}
+  - {fileID: 11400000, guid: b9c9d6f3a75929d468483c04309483d2, type: 2}
+  - {fileID: 11400000, guid: 75c54440e847a8b42896dc903a57caf7, type: 2}
