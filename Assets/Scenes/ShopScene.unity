@@ -10742,9 +10742,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 458481278830898966, guid: c64f2edfdd8cbcb4497d54442807a44b, type: 3}
     - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
+      propertyPath: _clientSlimePrefab
+      value: 
+      objectReference: {fileID: 458481278830898966, guid: f9d8d17f91832f343a69723a95092f23, type: 3}
+    - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
       propertyPath: clients.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
+      propertyPath: _clientGenericPrefab
+      value: 
+      objectReference: {fileID: 458481278830898966, guid: c64f2edfdd8cbcb4497d54442807a44b, type: 3}
     - target: {fileID: 685776499647177538, guid: 03a3ea49bee69d04ca28dba6dcf83f5c, type: 3}
       propertyPath: 'clients.Array.data[2]'
       value: 

@@ -6,6 +6,13 @@ using UnityEngine.Serialization;
 namespace LevelData
 {
     [Serializable]
+    public enum ClientType
+    {
+        HumanOrInfected,
+        Slime,
+    }
+
+    [Serializable]
     [CreateAssetMenu(fileName = "ClientData", menuName = "ScriptableObjects/ClientData", order = 1)]
     public class ClientData : ScriptableObject
     {
@@ -17,5 +24,6 @@ namespace LevelData
         public SoundManager.Sound _entrySound;
         public SoundManager.Sound _correctAudio;
         public SoundManager.Sound _incorrectAudio;
+        public ClientType _type;
     }
 }

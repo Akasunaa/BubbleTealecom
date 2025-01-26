@@ -16,7 +16,8 @@ public class ClientManager : MonoBehaviour
     public Transform clientSpawnPoint;
     public static ClientManager Instance { get; private set; }
 
-    [SerializeField] private GameObject _clientPrefab;
+    [SerializeField] private GameObject _clientGenericPrefab;
+    [SerializeField] private GameObject _clientSlimePrefab;
 
     private void Awake()
     {
@@ -50,7 +51,15 @@ public class ClientManager : MonoBehaviour
         SoundManager.PlaySound(SoundManager.Sound.Doorbell, 0.5f);
         ClientData nextClient = clients[0];
         clients.RemoveAt(0);
-        currentClient = Instantiate(_clientPrefab);
+        if (nextClient._type == ClientType.HumanOrInfected)
+        {
+            currentClient = Instantiate(_clientGenericPrefab);
+        }
+        else
+        {
+            currentClient = Instantiate(_clientSlimePrefab);
+        }
+
         currentClient.GetComponent<Client>().LoadData(nextClient);
         currentClient.transform.position = clientSpawnPoint.position + Vector3.right * X_DIFF;
         float x = currentClient.transform.position.x;
