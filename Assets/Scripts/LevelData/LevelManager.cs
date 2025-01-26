@@ -22,7 +22,7 @@ namespace LevelData
 
         private void Start()
         {
-            Load(_level);
+            Load(LevelDataHolder.CurrentLevel ? LevelDataHolder.CurrentLevel : _level);
         }
 
         public void Load(LevelObject level)
