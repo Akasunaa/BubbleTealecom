@@ -70,7 +70,6 @@ namespace UI
                     ItemUtils.DropItem(eventData, item);
                 }
             }
-            _rectTransform = GetComponent<RectTransform>();
         }
 
         public override void Receive(GameObject item)
