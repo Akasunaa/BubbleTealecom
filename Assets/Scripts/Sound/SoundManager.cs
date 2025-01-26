@@ -23,7 +23,13 @@ public static class SoundManager
         SlicerLever,
         MolecularReassembler,
         Tourniquet,
-        WindowClose
+        WindowClose,
+        HumainHappy1,
+        HumainHappy2,
+        AngryHuman1,
+        AngryHuman2,
+        AngryHuman3,
+        AngrySlime
     }
 
     public static void PlaySound(Sound sound, float volume = 1f)
