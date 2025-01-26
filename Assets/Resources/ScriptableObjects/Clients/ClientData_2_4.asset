@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf106b419c60cb244bc49c51692df734, type: 3}
+  m_Name: ClientData_2_4
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: -4613504737724152976, guid: 7e2f07dbe994d48f487284e654a99185, type: 3}
+  _recipe: {fileID: 11400000, guid: 725768e56668a02449d7210d47f869d1, type: 2}
+  _ingredientsLanguage: {fileID: 11400000, guid: 47740c50135be684bb0ed8a19585fa89, type: 2}
+  _transformationLanguage: {fileID: 11400000, guid: 83c6d06936e178b4ba8e8ac747efad52, type: 2}
+  _timer: 60
+  _entrySound: 4
+  _correctAudio: 4
+  _incorrectAudio: 4

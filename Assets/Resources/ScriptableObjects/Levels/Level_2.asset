@@ -19,5 +19,8 @@ MonoBehaviour:
   _toppings: 
   _machines: 0000000001000000
   _clients:
-  - {fileID: 11400000, guid: 976790b2045039d4b90348ac0455e2e5, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 57616cf143330b344ae5b79173eec968, type: 2}
+  - {fileID: 11400000, guid: 644b01ac3525eac4b8f255b1a1062548, type: 2}
+  - {fileID: 11400000, guid: 699a91b2efcedca4f8eccbfe42d794c5, type: 2}
+  - {fileID: 11400000, guid: d38307964b5f4e841911260e7eed8b0b, type: 2}
+  - {fileID: 11400000, guid: 85ba58b0d68ee2545ba6d15f676db863, type: 2}

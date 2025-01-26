@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf106b419c60cb244bc49c51692df734, type: 3}
-  m_Name: ClientData_2_1
+  m_Name: ClientData_2_2
   m_EditorClassIdentifier: 
-  _sprite: {fileID: -3108465536558337904, guid: aec77269d97bdc3e4b4a260577580565, type: 3}
-  _recipe: {fileID: 11400000, guid: 0dc6f7ccc4426f14d97c0601223da94f, type: 2}
+  _sprite: {fileID: -6388163620815734071, guid: b736d3bfed252c5769b14c0340b5d62e, type: 3}
+  _recipe: {fileID: 11400000, guid: 1fe713b54dc267b488012ec1875c3ff4, type: 2}
   _ingredientsLanguage: {fileID: 11400000, guid: a67a0c6ab77631c4bb73da3dac5075d5, type: 2}
   _transformationLanguage: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
   _timer: 60
