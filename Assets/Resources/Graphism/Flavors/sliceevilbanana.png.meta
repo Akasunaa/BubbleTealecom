@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sliceevilbanana_0: -7805582940172602343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
