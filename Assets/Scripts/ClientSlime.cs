@@ -13,12 +13,15 @@ public class ClientSlime : Client
     {
         foreach (var clientRecipeElement in clientRecipeElements.recipeElements)
         {
+            if (clientRecipeElement.ingredientStates.Contains(_ingredientInStomac))
+            {
+                break;
+            }
             var ingredientState = clientRecipeElement.ToIngredientState();
             if (!glassRecipe.finalIngredientStates.Contains(ingredientState))
             {
                 // Look for base ingredient in the recipe
                 var wrongBaseIngredientState = clientRecipeElement.ingredientStates.Find(baseIngredientState =>
-                    baseIngredientState != _ingredientInStomac &&
                     !glassRecipe.finalIngredientStates.Find(recipeIngredientState => recipeIngredientState == baseIngredientState ||
                         recipeIngredientState.oldIngredientState.Contains(baseIngredientState)) ==
                     baseIngredientState);
@@ -30,7 +33,7 @@ public class ClientSlime : Client
                 return GetSpriteFrom(clientRecipeElement.transform);
             }
         }
-        
+
         foreach (var glassIngredientState in glassRecipe.finalIngredientStates)
         {
             if (!recipe.finalIngredientStates.Contains(glassIngredientState))
