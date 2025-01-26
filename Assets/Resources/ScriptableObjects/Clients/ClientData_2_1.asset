@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Client_1_1
-  m_EditorClassIdentifier: Assembly-CSharp:LevelData:ClientData
+  m_Script: {fileID: 11500000, guid: cf106b419c60cb244bc49c51692df734, type: 3}
+  m_Name: ClientData_2_1
+  m_EditorClassIdentifier: 
   _sprite: {fileID: -3108465536558337904, guid: aec77269d97bdc3e4b4a260577580565, type: 3}
-  _recipe: {fileID: 11400000, guid: b110f42a6460f0740917e1867ccfcc2b, type: 2}
+  _recipe: {fileID: 11400000, guid: 7ab4208156d0ebf44845f22523914309, type: 2}
   _ingredientsLanguage: {fileID: 11400000, guid: a67a0c6ab77631c4bb73da3dac5075d5, type: 2}
   _transformationLanguage: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
-  _timer: 25
+  _timer: 60

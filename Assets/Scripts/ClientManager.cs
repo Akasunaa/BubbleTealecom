@@ -2,7 +2,6 @@ using LevelData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using LevelData;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
