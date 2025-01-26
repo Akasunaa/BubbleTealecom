@@ -31,12 +31,12 @@ public class Client : MonoBehaviour
     {
         clientImage.sprite = data._sprite;
 
+        ingredientStateImageList = data._ingredientsLanguage;
+        transformationImageList = data._transformationLanguage;
+
         recipeDisplayElements = data._recipe;
         recipe = ToRecipe(recipeDisplayElements);
         DisplayRecipe(recipeDisplayElements);
-
-        ingredientStateImageList = data._ingredientsLanguage;
-        transformationImageList = data._transformationLanguage;
 
         timerMax = data._timer;
         _timer = timerMax;
