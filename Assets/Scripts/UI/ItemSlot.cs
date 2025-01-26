@@ -12,6 +12,13 @@ namespace UI
 
         public GameObject GetItem() { return _item; }
 
+
+        public void DropItem()
+        {
+            ItemUtils.DropItem(null, _item);
+            _item = null;
+        }
+
         private void Start()
         {
             Init();

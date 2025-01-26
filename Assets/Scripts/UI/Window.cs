@@ -27,6 +27,14 @@ namespace UI
             {
                 return _stack.GetItemHolder();
             }
+            else
+            {
+                var stack = GetComponentInParent<WindowStack>();
+                if (stack)
+                {
+                    return stack.GetItemHolder();
+                }
+            }
 
             return null;
         }

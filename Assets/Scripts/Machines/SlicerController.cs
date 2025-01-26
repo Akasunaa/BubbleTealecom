@@ -15,7 +15,6 @@ namespace Machines
         [SerializeField] private EmptyableItemSlot _mainItemSlot;
         [SerializeField] private Scrollbar _bladeScrollbar;
         [SerializeField] private Scrollbar _handleScrollbar;
-        //TODO : Slider must come backto zero when not pointed by player
         
         private void Awake()
         {
