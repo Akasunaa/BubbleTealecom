@@ -2025,10 +2025,10 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 137a4ac2fddfdeb41b48de17a8689f5e, type: 3}
   - sound: 19
     audioClip: {fileID: 8300000, guid: 1ad82c185661b8f4aa0fb4e0000145ee, type: 3}
-  mainMusic: {fileID: 0}
-  ambiantMusic: {fileID: 0}
-  StartMusic: {fileID: 0}
-  EndMusic: {fileID: 0}
+  menuMusic: {fileID: 8300000, guid: 7393b1e82b7fbed458e16199fca92021, type: 3}
+  levelOneMusic: {fileID: 8300000, guid: d90e2831c461a67469710e3ae01dbffd, type: 3}
+  levelTwoMusic: {fileID: 8300000, guid: 4175c1798ee5c7d45a80fc1c0f7215b8, type: 3}
+  levelThreeMusic: {fileID: 8300000, guid: 68a2b81a0dcb9894287ef4551e4c73c0, type: 3}
   musicVolumeModifier: 0.35
   sfxVolumeModifier: 0.5
   mainMusicVolume: 1
