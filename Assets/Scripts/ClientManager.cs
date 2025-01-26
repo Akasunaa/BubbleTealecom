@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class ClientManager : MonoBehaviour
 {
@@ -33,6 +33,9 @@ public class ClientManager : MonoBehaviour
     {
         if (clients.Count == 0)
         {
+            print("go to main scene");
+            SceneManager.LoadScene("MainMenu");
+            print("todo : incr ++");
             return;
         }
         SoundManager.PlaySound(SoundManager.Sound.Doorbell, 0.5f);
