@@ -54,13 +54,15 @@ public class ClientManager : MonoBehaviour
         if (nextClient._type == ClientType.HumanOrInfected)
         {
             currentClient = Instantiate(_clientGenericPrefab);
+            currentClient.GetComponent<Client>().LoadData(nextClient);
         }
         else
         {
             currentClient = Instantiate(_clientSlimePrefab);
+            currentClient.GetComponent<ClientSlime>()._ingredientInStomac = nextClient.ingredientInStomac;
+            currentClient.GetComponent<ClientSlime>().LoadData(nextClient);
         }
 
-        currentClient.GetComponent<Client>().LoadData(nextClient);
         currentClient.transform.position = clientSpawnPoint.position + Vector3.right * X_DIFF;
         float x = currentClient.transform.position.x;
         currentClient.transform.DOMoveX(x - X_DIFF, 1.0f);

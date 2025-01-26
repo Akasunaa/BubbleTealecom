@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class ClientSlime : Client
 {
-    [SerializeField] private IngredientState _ingredientInStomac;
+    public IngredientState _ingredientInStomac;
     [SerializeField] private Transform _ingredientInStomacTransform;
 
     public override void SetupClientSpecific()

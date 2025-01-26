@@ -25,5 +25,6 @@ namespace LevelData
         public SoundManager.Sound _correctAudio;
         public SoundManager.Sound _incorrectAudio;
         public ClientType _type;
+        public IngredientState ingredientInStomac;
     }
 }

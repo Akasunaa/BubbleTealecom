@@ -20,3 +20,5 @@ MonoBehaviour:
   _entrySound: 6
   _correctAudio: 6
   _incorrectAudio: 6
+  _type: 1
+  ingredientInStomac: {fileID: 11400000, guid: 73d61d8035763e543bf190270c162d31, type: 2}
