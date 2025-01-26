@@ -205,7 +205,10 @@ public class Client : MonoBehaviour
                     return GetSpriteFrom(wrongBaseIngredientState);
                 }
 
-                return GetSpriteFrom(clientRecipeElement.transform);
+                if (clientRecipeElement.transform != Transformation.None)
+                {
+                    return GetSpriteFrom(clientRecipeElement.transform);
+                }
             }
         }
 

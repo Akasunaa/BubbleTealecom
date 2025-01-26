@@ -31,15 +31,25 @@ public class ClientSlime : Client
             {
                 // Look for base ingredient in the recipe
                 var wrongBaseIngredientState = clientRecipeElement.ingredientStates.Find(baseIngredientState =>
-                    !glassRecipe.finalIngredientStates.Find(recipeIngredientState => recipeIngredientState.sprite == baseIngredientState.sprite ||
-                        recipeIngredientState.oldIngredientState.Contains(baseIngredientState)).sprite ==
-                    baseIngredientState.sprite);
+                {
+                    var tmp = glassRecipe.finalIngredientStates.Find(recipeIngredientState =>
+                        recipeIngredientState.sprite == baseIngredientState.sprite ||
+                        recipeIngredientState.oldIngredientState.Contains(baseIngredientState));
+                    if (tmp)
+                    {
+                        return !(tmp.sprite == baseIngredientState.sprite);
+                    }
+                    return true;
+                });
                 if (wrongBaseIngredientState)
                 {
                     return GetSpriteFrom(wrongBaseIngredientState);
                 }
 
-                return GetSpriteFrom(clientRecipeElement.transform);
+                if (clientRecipeElement.transform != Transformation.None)
+                {
+                    return GetSpriteFrom(clientRecipeElement.transform);
+                }
             }
         }
 
