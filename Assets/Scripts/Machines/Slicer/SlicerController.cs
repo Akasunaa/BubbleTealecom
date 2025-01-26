@@ -13,11 +13,14 @@ namespace Machines
     public class SlicerController : BaseMachine
     {
         [SerializeField] private EmptyableItemSlot _mainItemSlot;
-        //TODO : Slider must come backto zero when not pointed by player
-        
+        [SerializeField] private Scrollbar _slicerBladeScrollbar;
+        [SerializeField] private Scrollbar _handleScrollbar;
+
         private void Awake()
         {
             Assert.IsNotNull(_mainItemSlot);
+            Assert.IsNotNull(_slicerBladeScrollbar);
+            Assert.IsNotNull(_handleScrollbar);
         }
 
 
@@ -43,6 +46,12 @@ namespace Machines
 
             ingredient.Transform(Transformation.Cut);
             SoundManager.PlaySound(SoundManager.Sound.Slicer);
+        }
+
+        private void Update()
+        {
+            _slicerBladeScrollbar.value = _handleScrollbar.value;
+
         }
 
         public void OnSliderValueChanged(Scrollbar scrollbar)
