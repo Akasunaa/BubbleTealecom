@@ -103,7 +103,7 @@ public class Client : MonoBehaviour
 
     private void UnHappyClient()
     {
-        SoundManager.PlaySound(incorrectAudio);
+        //SoundManager.PlaySound(incorrectAudio);
         ClientManager.Instance.ClientUnHappy();
     }
 

@@ -1,6 +1,7 @@
 using LevelData;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using LevelData;
 using Unity.Collections;
 using UnityEngine;
@@ -37,8 +38,9 @@ public class ClientManager : MonoBehaviour
     {
         if (clients.Count == 0)
         {
-            SceneManager.LoadScene("MainMenu");
             LevelDataHolder.CurrentDay = LevelDataHolder.CurrentDay + 1;
+            GameObject.FindGameObjectsWithTag("Sound").ToList().ForEach(x => Destroy(x));
+            SceneManager.LoadScene("MainMenu");
             return;
         }
         SoundManager.PlaySound(SoundManager.Sound.Doorbell, 0.5f);
