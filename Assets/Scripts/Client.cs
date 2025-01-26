@@ -25,6 +25,9 @@ public class Client : MonoBehaviour
     public SoundManager.Sound entrySound;
     public SoundManager.Sound correctAudio;
     public SoundManager.Sound incorrectAudio;
+    public float entryVolume;
+    public float correctVolume;
+    public float incorrectVolume;
     public SpriteRenderer clientImage;
 
     public void LoadData(ClientData data)
@@ -35,15 +38,20 @@ public class Client : MonoBehaviour
         transformationImageList = data._transformationLanguage;
 
         recipeDisplayElements = data._recipe;
+
+        entrySound = data._entrySound;
+        correctAudio = data._correctAudio;
+        incorrectAudio = data._incorrectAudio;
+
+        entryVolume = data._entryVolume;
+        correctVolume = data._correctVolume;
+        incorrectVolume = data._incorrectVolume;
+
         recipe = ToRecipe(recipeDisplayElements);
         DisplayRecipe(recipeDisplayElements);
 
         timerMax = data._timer;
         _timer = timerMax;
-
-        entrySound = data._entrySound;
-        correctAudio = data._correctAudio;
-        incorrectAudio = data._incorrectAudio;
     }
 
     private void Start()
@@ -58,7 +66,7 @@ public class Client : MonoBehaviour
 
     public virtual Recipe ToRecipe(ClientRecipeElements recipeElements)
     {
-        SoundManager.PlaySound(entrySound);
+        SoundManager.PlaySound(entrySound, entryVolume);
         return recipeElements.ToRecipe();
     }
 
@@ -89,7 +97,7 @@ public class Client : MonoBehaviour
         bool isGoodRecipe = Recipe.CompareIngredientList(recipe.finalIngredientStates, otherRecipe.finalIngredientStates);
         if (isGoodRecipe)
         {
-            SoundManager.PlaySound(correctAudio);
+            SoundManager.PlaySound(correctAudio, correctVolume);
             ClientManager.Instance.ClientHappy();
         }
         else
@@ -101,7 +109,7 @@ public class Client : MonoBehaviour
             clientElement.GetComponent<Image>().transform.position = bubbleAnswerElementTransform.position;
             clientElement.transform.localScale = new Vector3(2, 2, 1);
             bubbleRecipeAnswer.SetActive(true);
-            SoundManager.PlaySound(incorrectAudio);
+            SoundManager.PlaySound(incorrectAudio, incorrectVolume);
             Invoke(nameof(UnHappyClient), 3.0f);
         }
     }
