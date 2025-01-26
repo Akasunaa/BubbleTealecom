@@ -49,10 +49,16 @@ namespace Machines
         {
             _working = true;
             yield return null;
+#if !UNITY_EDITOR
             SoundManager.PlaySound(SoundManager.Sound.Shaker);
             AudioClip clip = SoundManager.GetAudioClip(SoundManager.Sound.Shaker);
+#endif
             //TODO : Stop the glass from being picked up
+#if !UNITY_EDITOR
             yield return new WaitForSeconds(clip.length);
+#else
+            yield return new WaitForSeconds(2f);
+#endif
             //TODO : Unstop the glass from being picked up
             glassItemSlot.ShakeGlass();
             _working = false;

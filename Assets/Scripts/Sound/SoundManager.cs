@@ -28,6 +28,7 @@ public static class SoundManager
 
     public static void PlaySound(Sound sound, float volume = 1f)
     {
+#if !UNITY_EDITOR
         if (sound == Sound.None) return;
 
         GameObject soundGameObject = new GameObject("Sound");
@@ -37,6 +38,7 @@ public static class SoundManager
         audioSource.volume = volume;
         audioSource.Play();
         Object.Destroy(soundGameObject, audioSource.clip.length);
+#endif
     }
 
     public static AudioClip GetAudioClip(Sound sound)

@@ -1148,6 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a607f41da81d411478322370855c721c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _machineTransformation: 0
   _mainItemSlot: {fileID: 183533954}
 --- !u!1 &231921946
 GameObject:
@@ -1540,6 +1541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e399a986ab908c1429410fdcec3cda0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _machineTransformation: 2
   _itemSlot1: {fileID: 343408786}
   _itemSlot2: {fileID: 897468468}
   _outputSlot: {fileID: 556504616}
@@ -4506,6 +4508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d41f7ef583f3c546bd7fe8d25754058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _machineTransformation: 1
   _mainItemSlot: {fileID: 1098423131}
   _bladeScrollbar: {fileID: 726044016}
   _handleScrollbar: {fileID: 642629000}

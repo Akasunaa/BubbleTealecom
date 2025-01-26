@@ -41,8 +41,18 @@ namespace Machines
                 return;
             }
 
-            ingredient.Transform(Transformation.Cut);
-            SoundManager.PlaySound(SoundManager.Sound.Slicer);
+            if(CheckItemSlotHasCorrectItem(_mainItemSlot))
+            {
+                print("Slicer protocol enacted");
+                ingredient.Transform(Transformation.Cut);
+                SoundManager.PlaySound(SoundManager.Sound.Slicer);
+            }
+            else
+            {
+                print("item cannot be sliced");
+                SoundManager.PlaySound(SoundManager.Sound.Error);
+            }
+
         }
 
         private void Update()

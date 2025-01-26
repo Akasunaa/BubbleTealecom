@@ -29,32 +29,13 @@ namespace Machines
             Assert.IsNotNull(_itemSlot1);
             Assert.IsNotNull(_itemSlot2);
             Assert.IsNotNull(_outputSlot);
+            Assert.IsNotNull(_machineTransformation);
         }
 
         private void Awake()
         {
             _tourniquetStartRotation = _tourniquetButton.rotation.eulerAngles;
             print(_tourniquetStartRotation);
-        }
-
-        /// <summary>
-        /// Ensures that the inputted ingredient can be moleculared
-        /// </summary>
-        private bool CheckItemSlotHasCorrectItem(EmptyableItemSlot itemSlot)
-        {
-            var item = itemSlot.GetItem();
-            if (item != null && item.GetComponent<Ingredient>())
-            {
-                var possibleTransformations = item.GetComponent<Ingredient>().ingredientState.possibleTransformations;
-                foreach(IngredientTransformation ingredientTransformation in possibleTransformations)
-                {
-                    if (ingredientTransformation.transformation == Transformation.MolecularAssembly)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
         }
 
         public override void MachineExecuteButtonCalled()
@@ -97,8 +78,11 @@ namespace Machines
         {
             _working = true;
             yield return null;
+#if UNITY_EDITOR
+#else
             SoundManager.PlaySound(SoundManager.Sound.MolecularReassembler);
             AudioClip clip = SoundManager.GetAudioClip(SoundManager.Sound.MolecularReassembler);
+#endif
             //we generate the combined ingredient in the outputslot
             var newMelange = GenerateNewMelangeItem();
             newMelange.SetActive(false);
@@ -106,7 +90,11 @@ namespace Machines
             //TODO : remove original items before the timer
             _itemSlot1.DropItem();
             _itemSlot2.DropItem();
+#if UNITY_EDITOR
+            yield return new WaitForSeconds(2f);
+#else
             yield return new WaitForSeconds(clip.length);
+#endif
             //after delay, enable melange object
             newMelange.SetActive(true);
             //we reset the tourniquet
