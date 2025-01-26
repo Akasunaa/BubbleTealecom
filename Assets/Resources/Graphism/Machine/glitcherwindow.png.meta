@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      glitcherwindow_0: -7818587294437410853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
