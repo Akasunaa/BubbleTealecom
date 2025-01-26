@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f7bad6cd86d22774aa93707430d91c2b
+guid: bb4e8063a7beed149bae669d878f9510
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8304904573453883611
-    second: slicedodeca_0
+      213: 7614934428948733139
+    second: humanglitch_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slicedodeca_0
+      name: humanglitch_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 13
-        width: 958
-        height: 955
+        x: 7
+        y: 260
+        width: 1484
+        height: 744
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd85c3255b2f04370800000000000000
-      internalID: 8304904573453883611
+      spriteID: 3dc9169748eada960800000000000000
+      internalID: 7614934428948733139
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      slicedodeca_0: 8304904573453883611
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
