@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e6dc33c04537c644986d0f8f309fc4b2
+guid: 6b1aa119eb36ad04fa286fb1979cda06
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4208487845547911966
-    second: infecte3_0
-  - first:
-      213: -5214951417894318010
-    second: infecte3_1
+      213: 2097090176024397336
+    second: machinemolecular_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -142,35 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: infecte3_0
+      name: machinemolecular_0
       rect:
         serializedVersion: 2
-        x: 1243
-        y: 76
-        width: 10
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1bae63e56d876a30800000000000000
-      internalID: 4208487845547911966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: infecte3_1
-      rect:
-        serializedVersion: 2
-        x: 1290
+        x: 0
         y: 0
-        width: 1600
-        height: 3717
+        width: 2662
+        height: 2920
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6405d7fb055c0a7b0800000000000000
-      internalID: -5214951417894318010
+      spriteID: 81645eb776c5a1d10800000000000000
+      internalID: 2097090176024397336
       vertices: []
       indices: 
       edges: []
@@ -198,9 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      infecte3_0: 4208487845547911966
-      infecte3_1: -5214951417894318010
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
