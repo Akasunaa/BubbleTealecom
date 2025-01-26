@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprite: {fileID: 8069619478552258361, guid: 7f55eb1215aa8143c85ae71bb10df797, type: 3}
   _recipe: {fileID: 11400000, guid: 7ab006b453fdb7d449f367085ff542a8, type: 2}
-  _ingredientsLanguage: {fileID: 11400000, guid: a67a0c6ab77631c4bb73da3dac5075d5, type: 2}
-  _transformationLanguage: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
+  _ingredientsLanguage: {fileID: 11400000, guid: e67d1ce3df470554f818c02743164e5c, type: 2}
+  _transformationLanguage: {fileID: 11400000, guid: 90fcf28cfd721474caa531cc21e2be5e, type: 2}
   _timer: 60
   _entrySound: 6
   _correctAudio: 8
