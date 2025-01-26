@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformationImages:
   - transformation: 1
-    image: {fileID: 761100573506273824, guid: 58050a11632b86740a13dfe3ad57ce63, type: 3}
+    image: {fileID: -8558868092503906213, guid: 1e59fa1a059fd8e42b53802d4fc876db, type: 3}
   - transformation: 2
-    image: {fileID: 3094009027305210438, guid: 64ff6da6cbd666545b6da40c36d11d43, type: 3}
+    image: {fileID: 11643239166493892, guid: d4958de4b60d41f46b26d1ccbf7ab9ba, type: 3}
   - transformation: 3
     image: {fileID: 0}
   - transformation: 3
