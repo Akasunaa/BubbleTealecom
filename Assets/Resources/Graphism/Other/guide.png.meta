@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bb4e8063a7beed149bae669d878f9510
+guid: ff641b8b9d0d9be4080351e2f7b4661a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7614934428948733139
-    second: humanglitch_0
+      213: -2655380259140938692
+    second: guide_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: humanglitch_0
+      name: guide_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 260
-        width: 1484
-        height: 744
+        x: 361
+        y: 105
+        width: 742
+        height: 1345
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3dc9169748eada960800000000000000
-      internalID: 7614934428948733139
+      spriteID: c34d15e19b1362bd0800000000000000
+      internalID: -2655380259140938692
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      humanglitch_0: 7614934428948733139
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

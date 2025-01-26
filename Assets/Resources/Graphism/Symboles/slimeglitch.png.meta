@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slimeglitch_0: -3850714336785978647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
