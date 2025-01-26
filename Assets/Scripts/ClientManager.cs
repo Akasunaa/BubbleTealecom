@@ -5,9 +5,12 @@ using System.Linq;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class ClientManager : MonoBehaviour
 {
+    private const float X_DIFF = 10.0f;
+
     private List<ClientData> clients;
     private GameObject currentClient;
     public Transform clientSpawnPoint;
@@ -15,16 +18,16 @@ public class ClientManager : MonoBehaviour
 
     [SerializeField] private GameObject _clientPrefab;
 
-    private void Awake() 
+    private void Awake()
     {
-        if (Instance != null && Instance != this) 
-        { 
-            Destroy(this); 
-        } 
-        else 
-        { 
-            Instance = this; 
-        } 
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
 
     public void SetupClients(List<ClientData> clients)
@@ -43,31 +46,41 @@ public class ClientManager : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
             return;
         }
+
         SoundManager.PlaySound(SoundManager.Sound.Doorbell, 0.5f);
         ClientData nextClient = clients[0];
         clients.RemoveAt(0);
         currentClient = Instantiate(_clientPrefab);
         currentClient.GetComponent<Client>().LoadData(nextClient);
-        currentClient.transform.position = clientSpawnPoint.position;
+        currentClient.transform.position = clientSpawnPoint.position + Vector3.right * X_DIFF;
+        float x = currentClient.transform.position.x;
+        currentClient.transform.DOMoveX(x - X_DIFF, 1.0f);
     }
 
     public void ClientTimerEnded()
     {
-        Destroy(currentClient);
-        SpawnNextClient();
+        ClientLeave(currentClient);
     }
 
     public void ClientHappy()
     {
         Debug.Log("Happy Client got his BUBBLE TEA !");
-        Destroy(currentClient);
-        SpawnNextClient();
+        ClientLeave(currentClient);
     }
-    
+
     public void ClientUnHappy()
     {
         Debug.Log("Un Happy Client didn't get his desired BUBBLE TEA !");
-        Destroy(currentClient);
-        SpawnNextClient();
+        ClientLeave(currentClient);
+    }
+
+    private void ClientLeave(GameObject client)
+    {
+        float x = client.transform.position.x;
+        client.transform.DOMoveX(x + X_DIFF, 1.0f).OnComplete(() =>
+        {
+            Destroy(client);
+            SpawnNextClient();
+        });
     }
 }
