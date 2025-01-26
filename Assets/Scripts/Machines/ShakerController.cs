@@ -10,7 +10,13 @@ namespace Machines
     public class ShakerController : BaseMachine
     {
         [SerializeField] private EmptyableItemSlot _mainItemSlot;
+        [SerializeField] private GameObject _blocker;
         private GameObject _curItemContained;
+
+        private void Start()
+        {
+            _blocker.SetActive(false);
+        }
 
         public override void MachineExecuteButtonCalled()
         {
@@ -47,13 +53,14 @@ namespace Machines
             SoundManager.PlaySound(SoundManager.Sound.Shaker);
             AudioClip clip = SoundManager.GetAudioClip(SoundManager.Sound.Shaker);
 #endif
-            //TODO : Stop the glass from being picked up
+            _blocker.SetActive(true);
+            print(glassItemSlot.GetItem());
 #if !UNITY_EDITOR
             yield return new WaitForSeconds(clip.length);
 #else
             yield return new WaitForSeconds(2f);
 #endif
-            //TODO : Unstop the glass from being picked up
+            _blocker.SetActive(false);
             glassItemSlot.ShakeGlass();
             _working = false;
         }
