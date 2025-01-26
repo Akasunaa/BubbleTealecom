@@ -27,11 +27,13 @@ namespace UI.Menu
             }
             else if (dayIndexed == _myIndex)
             {
+                _stateImage.gameObject.SetActive(true);
                 _stateImage.sprite = _currentTexture;
                 _isCurrent = true;
             }
             else
             {
+                _stateImage.gameObject.SetActive(true);
                 _stateImage.sprite = _passedTexture;
             }
         }
