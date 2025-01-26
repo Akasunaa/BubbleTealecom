@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      calendrier-fond_0: -2959755981333718164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
