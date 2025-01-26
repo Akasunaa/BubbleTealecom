@@ -77,7 +77,7 @@ namespace LevelData
             }
 
             // setup clients
-            ClientManager.Instance.SetupClients(new List<GameObject>(level._clients));
+            ClientManager.Instance.SetupClients(new List<ClientData>(level._clients));
         }
     }
 }

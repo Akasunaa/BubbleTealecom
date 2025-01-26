@@ -1,15 +1,20 @@
+using LevelData;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using LevelData;
 using Unity.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class ClientManager : MonoBehaviour
 {
-    private List<GameObject> clients = new List<GameObject>();
+    private List<ClientData> clients;
     private GameObject currentClient;
     public Transform clientSpawnPoint;
     public static ClientManager Instance { get; private set; }
+
+    [SerializeField] private GameObject _clientPrefab;
 
     private void Awake() 
     {
@@ -23,7 +28,7 @@ public class ClientManager : MonoBehaviour
         } 
     }
 
-    public void SetupClients(List<GameObject> clients)
+    public void SetupClients(List<ClientData> clients)
     {
         this.clients = clients;
         SpawnNextClient();
@@ -33,12 +38,16 @@ public class ClientManager : MonoBehaviour
     {
         if (clients.Count == 0)
         {
+            LevelDataHolder.CurrentDay = LevelDataHolder.CurrentDay + 1;
+            GameObject.FindGameObjectsWithTag("Sound").ToList().ForEach(x => Destroy(x));
+            SceneManager.LoadScene("MainMenu");
             return;
         }
         SoundManager.PlaySound(SoundManager.Sound.Doorbell, 0.5f);
-        GameObject nextClient = clients[0];
+        ClientData nextClient = clients[0];
         clients.RemoveAt(0);
-        currentClient = Instantiate(nextClient);
+        currentClient = Instantiate(_clientPrefab);
+        currentClient.GetComponent<Client>().LoadData(nextClient);
         currentClient.transform.position = clientSpawnPoint.position;
     }
 
