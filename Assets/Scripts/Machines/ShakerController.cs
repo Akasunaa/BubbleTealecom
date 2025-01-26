@@ -45,6 +45,7 @@ namespace Machines
 
         public IEnumerator MachineFunctionDelay(GlassItemSlot glassItemSlot)
         {
+            _working = true;
             yield return null;
             SoundManager.PlaySound(SoundManager.Sound.Shaker);
             AudioClip clip = SoundManager.GetAudioClip(SoundManager.Sound.Shaker);
@@ -52,6 +53,7 @@ namespace Machines
             yield return new WaitForSeconds(clip.length);
             //TODO : Unstop the glass from being picked up
             glassItemSlot.ShakeGlass();
+            _working = false;
         }
     }
 }
