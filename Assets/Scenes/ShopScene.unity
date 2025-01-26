@@ -946,12 +946,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 2138348810}
     m_Modifications:
     - target: {fileID: 85286600788351585, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 151.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 85286600788351585, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 173.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 85286600788351585, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 85286600788351585, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1997735316578758560, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_Name
@@ -1039,6 +1047,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4161811510833813637, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8542653549661865833, guid: 49444a28249c6ba4989636dd1142fcf1, type: 3}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7216981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7216981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033012558922303439, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5561424044657400392, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8285098921950103547, guid: 9244109a8cc063d4d98fbd737e21c684, type: 3}
+    - target: {fileID: 5561424044657400392, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5561424044657400392, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5561424044657400392, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5561424044657400392, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753226575458372110, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1241,7 +1293,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5720981692729640745, guid: 66dacf98dc7d942418f371ffc8e38f51, type: 3}
+  m_Sprite: {fileID: 1912372339119570628, guid: 59bc5ceeb7b92ca42b35a28b2abc8781, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2227,7 +2279,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2241,7 +2293,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1984203149}
   m_HandleRect: {fileID: 1984203148}
   m_Direction: 3
@@ -3580,8 +3632,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3975225984636536462, guid: f73c0fce688c97f4ab6511c7b25f3bff, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3797,10 +3849,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8542653549661865833, guid: 49444a28249c6ba4989636dd1142fcf1, type: 3}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7216981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032097197633022193, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7216981
+      objectReference: {fileID: 0}
     - target: {fileID: 5033012558922303439, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8993825122430992373, guid: bc8a6f0a2b3e052488c79b7545ad0b14, type: 3}
+      objectReference: {fileID: 1912372339119570628, guid: 59bc5ceeb7b92ca42b35a28b2abc8781, type: 3}
     - target: {fileID: 5033012558922303439, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -3834,13 +3902,13 @@ PrefabInstance:
     - {fileID: 5251636778816877503, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4161811510833813637, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
-      insertIndex: 1
+      insertIndex: 0
       addedObject: {fileID: 1904498585}
     - targetCorrespondingSourceObject: {fileID: 4161811510833813637, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
-      insertIndex: 2
+      insertIndex: 1
       addedObject: {fileID: 726044014}
     - targetCorrespondingSourceObject: {fileID: 4161811510833813637, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
-      insertIndex: 3
+      insertIndex: 2
       addedObject: {fileID: 236895541}
     - targetCorrespondingSourceObject: {fileID: 4161811510833813637, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       insertIndex: 4
@@ -6852,7 +6920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1547608551974107024, guid: 4ddd8aa7f923beb47b7a2044ed7b2769, type: 3}
+  m_Sprite: {fileID: -6129241197813749333, guid: d45a3fad08035d846a9c41cd4573759d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
