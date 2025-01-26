@@ -27,6 +27,7 @@ namespace Machines
         public override void MachineExecuteButtonCalled()
         {
             var item = _mainItemSlot.GetItem();
+            SoundManager.PlaySound(SoundManager.Sound.SlicerLever, 0.6f);
             if (!item)
             {
                 SoundManager.PlaySound(SoundManager.Sound.Error);
@@ -51,11 +52,6 @@ namespace Machines
 
         public void OnSliderValueChanged(Scrollbar scrollbar)
         {
-            if (scrollbar.value < 0.1)
-            {
-                SoundManager.PlaySound(SoundManager.Sound.SlicerLever);
-            }
-
             if (scrollbar.value > 0.0)
             {        
                 if (scrollbar.value > 0.9)

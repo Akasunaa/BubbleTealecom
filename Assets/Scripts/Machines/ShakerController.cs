@@ -26,6 +26,8 @@ namespace Machines
                 return;
             }
             //we recover the item
+
+            SoundManager.PlaySound(SoundManager.Sound.SwitchButton, 0.6f);
             _curItemContained = _mainItemSlot.GetItem();
             if (_curItemContained != null && _curItemContained.GetComponent<GlassItemSlot>() 
                 && !_curItemContained.GetComponent<GlassItemSlot>().GetIsShaken()

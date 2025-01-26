@@ -22,7 +22,8 @@ public static class SoundManager
         Slicer,
         SlicerLever,
         MolecularReassembler,
-        Tourniquet
+        Tourniquet,
+        WindowClose
     }
 
     public static void PlaySound(Sound sound, float volume = 1f)

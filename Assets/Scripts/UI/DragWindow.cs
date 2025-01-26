@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -16,6 +17,16 @@ namespace UI
         {
             base.Init();
             _rectTransform = GetComponent<RectTransform>();
+        }
+
+        void OnEnable()
+        {
+            SoundManager.PlaySound(SoundManager.Sound.Window, 0.5f);
+        }
+
+        void OnDisable()
+        {
+            SoundManager.PlaySound(SoundManager.Sound.WindowClose, 0.5f);
         }
 
         private void ClampDrag()

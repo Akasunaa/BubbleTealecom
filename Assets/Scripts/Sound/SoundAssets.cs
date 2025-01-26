@@ -9,8 +9,6 @@ public class SoundAssets : MonoBehaviour
 
     public SoundAudioClip[] soundAudioClipsArray;
 
-    private float stepTimer;
-    public bool canPlayStep = true;
     public AudioClip mainMusic;
     public AudioClip ambiantMusic;
     private AudioSource musicSource;
@@ -27,8 +25,6 @@ public class SoundAssets : MonoBehaviour
     public Slider musicSlide;
     public Slider ambiantSlide;
     public Slider sfxSlide;
-
-    [SerializeField] private float stepFrequency = 0.3f;
 
     [System.Serializable]
     public class SoundAudioClip
@@ -139,15 +135,6 @@ public class SoundAssets : MonoBehaviour
                 break;
             default:
                 break;
-        }
-    }
-
-    public void Update()
-    {
-        stepTimer -= Time.deltaTime;
-        if (stepTimer <= 0)
-        {
-            canPlayStep = true;
         }
     }
 }
