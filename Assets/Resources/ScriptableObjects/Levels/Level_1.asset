@@ -18,4 +18,9 @@ MonoBehaviour:
   _bubbles: 01000000
   _toppings: 
   _machines: 00000000
-  _clients: []
+  _clients:
+  - {fileID: 458481278830898966, guid: 3090f03266c2038418b1f4d90a4d56b1, type: 3}
+  - {fileID: 458481278830898966, guid: 1a5961642f9ddbf49b8419e1046e1969, type: 3}
+  - {fileID: 458481278830898966, guid: 515f37f28e64dda4181c56daf0912aca, type: 3}
+  - {fileID: 458481278830898966, guid: cf01d3b2959016f468aaf8119af2e566, type: 3}
+  - {fileID: 458481278830898966, guid: 044bbfc5b5316524a952134457c6ba52, type: 3}

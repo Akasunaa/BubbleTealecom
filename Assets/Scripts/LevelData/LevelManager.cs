@@ -74,6 +74,9 @@ namespace LevelData
             {
                 holder.gameObject.SetActive(level._toppings.Contains(holder.value));
             }
+
+            // setup clients
+            ClientManager.Instance.SetupClients(level._clients);
         }
     }
 }

@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class ClientManager : MonoBehaviour
 {
-    public List<GameObject> clients;
+    private List<GameObject> clients = new List<GameObject>();
     private GameObject currentClient;
     public Transform clientSpawnPoint;
     public static ClientManager Instance { get; private set; }
 
     private void Awake() 
-    { 
+    {
         if (Instance != null && Instance != this) 
         { 
             Destroy(this); 
@@ -23,8 +23,9 @@ public class ClientManager : MonoBehaviour
         } 
     }
 
-    void Start()
+    public void SetupClients(List<GameObject> clients)
     {
+        this.clients = clients;
         SpawnNextClient();
     }
 
