@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 6b1aa119eb36ad04fa286fb1979cda06
+guid: 7c243e3b245296f4f870f7aa0112a490
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2097090176024397336
-    second: machinemolecular_0
+      213: -4688917028090226734
+    second: day02_0
+  - first:
+      213: -7746748278529461849
+    second: day02_1
+  - first:
+      213: -3891524337534681153
+    second: day02_2
+  - first:
+      213: -1980810612285686133
+    second: day02_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,56 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: machinemolecular_0
+      name: day02_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2662
-        height: 2920
+        x: 2934
+        y: 2155
+        width: 7
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81645eb776c5a1d10800000000000000
-      internalID: 2097090176024397336
+      spriteID: 2d7d66f4ece9deeb0800000000000000
+      internalID: -4688917028090226734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: day02_1
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 2153
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1f1e51c750e7490800000000000000
+      internalID: -7746748278529461849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: day02_2
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 2078
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf3572bb378ef9c0800000000000000
+      internalID: -3891524337534681153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: day02_3
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 838
+        width: 1365
+        height: 1312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e336f2e3fb284e0800000000000000
+      internalID: -1980810612285686133
       vertices: []
       indices: 
       edges: []
@@ -173,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      machinemolecular_0: 2097090176024397336
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
