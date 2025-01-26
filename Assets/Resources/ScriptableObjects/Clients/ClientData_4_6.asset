@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf106b419c60cb244bc49c51692df734, type: 3}
   m_Name: ClientData_4_6
   m_EditorClassIdentifier: 
-  _sprite: {fileID: -4613504737724152976, guid: 7e2f07dbe994d48f487284e654a99185, type: 3}
+  _sprite: {fileID: 8069619478552258361, guid: 7f55eb1215aa8143c85ae71bb10df797, type: 3}
   _recipe: {fileID: 11400000, guid: 0efb19673b1fb014d8dc616cafce829d, type: 2}
   _ingredientsLanguage: {fileID: 11400000, guid: e67d1ce3df470554f818c02743164e5c, type: 2}
   _transformationLanguage: {fileID: 11400000, guid: 90fcf28cfd721474caa531cc21e2be5e, type: 2}
   _timer: 60
+  _entrySound: 6
+  _correctAudio: 7
+  _incorrectAudio: 8
   _type: 1
   ingredientInStomac: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
-  _entrySound: 4
-  _correctAudio: 24
-  _incorrectAudio: 25
   _entryVolume: 0.3
   _correctVolume: 1
   _incorrectVolume: 1
