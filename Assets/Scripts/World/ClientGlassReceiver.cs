@@ -10,7 +10,7 @@ namespace World
             var cpnt = glass.GetComponent<GlassItemSlot>();
             if (cpnt)
             {
-                GetComponent<Client>().GiveGlass(cpnt.GetRecipe());
+                GetComponent<Client>().GiveGlass(cpnt.GetRecipe(), cpnt.GetIsShaken());
                 cpnt.Clear();
             }
         }

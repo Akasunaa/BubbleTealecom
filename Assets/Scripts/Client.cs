@@ -88,9 +88,21 @@ public class Client : MonoBehaviour
         timerFillImage.fillAmount = _timer / timerMax;
     }
 
-    public void GiveGlass(Recipe otherRecipe)
+    public void GiveGlass(Recipe otherRecipe, bool isShaken)
     {
         _timerEnded = true;
+        if (!isShaken)
+        {
+            bubbleRecipe.SetActive(false);
+            GameObject clientElement = Instantiate(clientRecipeElementPrefab, bubbleRecipeAnswer.transform);
+            clientElement.GetComponent<Image>().transform.position = bubbleAnswerElementTransform.position;
+            clientElement.GetComponent<Image>().color = new Color(0,0,0,0);
+            clientElement.transform.localScale = new Vector3(2, 2, 1);
+            bubbleRecipeAnswer.SetActive(true);
+            SoundManager.PlaySound(incorrectAudio, incorrectVolume);
+            Invoke(nameof(UnHappyClient), 3.0f);
+            return;
+        }
         bool isGoodRecipe = Recipe.CompareIngredientList(recipe.finalIngredientStates, otherRecipe.finalIngredientStates);
         if (isGoodRecipe)
         {
