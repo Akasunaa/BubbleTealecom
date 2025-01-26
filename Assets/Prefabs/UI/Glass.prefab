@@ -241,3 +241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slotList: {fileID: 1373745803938324740}
+  _image: {fileID: 119579341076315289}
+  _filledSprite: {fileID: 2736986290644251039, guid: 37efa943384bf23479b825f06f74c5f3, type: 3}
+  _emptySprite: {fileID: -8292358396914113479, guid: 3f205054f3646dc45a111d6383aaf970, type: 3}

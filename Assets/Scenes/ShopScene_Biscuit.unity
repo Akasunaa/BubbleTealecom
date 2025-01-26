@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &46239775 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1997735316578758560, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
-  m_PrefabInstance: {fileID: 1422130041}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &74525768
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,17 +353,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &136338241 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 119579341076315289, guid: 49416ec5b2aabc94cb12735707a3a246, type: 3}
-  m_PrefabInstance: {fileID: 6966515303411096312}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &231921946
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,17 +929,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &577066268 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3652089198418379048, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
-  m_PrefabInstance: {fileID: 1422130041}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2a7b57dd4d4b3490202163cdc140f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &733901841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,25 +2085,23 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3526874943984262701, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
   m_PrefabInstance: {fileID: 1422130041}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46239775}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68d929982fc986141ae539fd0dc897e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1125884445
+--- !u!114 &1125884445 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5766321683188460774, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
+  m_PrefabInstance: {fileID: 1422130041}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46239775}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a607f41da81d411478322370855c721c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainItemSlot: {fileID: 577066268}
 --- !u!1 &1263739605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,10 +2785,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4161811510833813637, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1289281532}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1997735316578758560, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1125884445}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a977da34dd236548918addf4ebd2fa6, type: 3}
 --- !u!1001 &1466345920
 PrefabInstance:
@@ -5794,18 +5762,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glass
       objectReference: {fileID: 0}
-    - target: {fileID: 4852103199709437141, guid: 49416ec5b2aabc94cb12735707a3a246, type: 3}
-      propertyPath: _image
-      value: 
-      objectReference: {fileID: 136338241}
-    - target: {fileID: 4852103199709437141, guid: 49416ec5b2aabc94cb12735707a3a246, type: 3}
-      propertyPath: _emptySprite
-      value: 
-      objectReference: {fileID: -8292358396914113479, guid: 3f205054f3646dc45a111d6383aaf970, type: 3}
-    - target: {fileID: 4852103199709437141, guid: 49416ec5b2aabc94cb12735707a3a246, type: 3}
-      propertyPath: _filledSprite
-      value: 
-      objectReference: {fileID: 2736986290644251039, guid: 37efa943384bf23479b825f06f74c5f3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
