@@ -83,6 +83,7 @@ public class Client : MonoBehaviour
             clientElement.GetComponent<Image>().sprite = firstWrongSprite;
             clientElement.GetComponent<Image>().transform.position = bubbleAnswerElementTransform.position;
             bubbleRecipeAnswer.SetActive(true);
+            SoundManager.PlaySound(incorrectAudio);
             Invoke(nameof(UnHappyClient), 3.0f);
         }
     }
