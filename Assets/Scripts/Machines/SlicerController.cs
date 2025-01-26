@@ -32,6 +32,12 @@ namespace Machines
             if (!ingredient)
             {
                 Debug.LogError("BIZARRE INGREDIENT (probably the glass)");
+                SoundManager.PlaySound(SoundManager.Sound.Error);
+                return;
+            }
+            if (ingredient.ingredientState.transformations.Count != 0)
+            {
+                SoundManager.PlaySound(SoundManager.Sound.Error);
                 return;
             }
 
