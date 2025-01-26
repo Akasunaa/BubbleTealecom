@@ -52,10 +52,7 @@ public class Client : MonoBehaviour
 
         timerMax = data._timer;
         _timer = timerMax;
-    }
 
-    private void Start()
-    {
         SetupClientSpecific();
     }
 

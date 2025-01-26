@@ -138,7 +138,7 @@ MonoBehaviour:
   transformationImageList: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
   bubbleFirstElementTransform: {fileID: 7834159540968126166}
   bubbleAnswerElementTransform: {fileID: 484620804396546863}
-  delimiterSprite: {fileID: 2828182002308998896, guid: 16271d9b34b85924cb8d60fb2a272f70, type: 3}
+  delimiterSprite: {fileID: 21300000, guid: 16271d9b34b85924cb8d60fb2a272f70, type: 3}
   timerGradient:
     serializedVersion: 2
     key0: {r: 0, g: 1, b: 0.055066347, a: 1}
@@ -172,6 +172,9 @@ MonoBehaviour:
   entrySound: 1
   correctAudio: 1
   incorrectAudio: 1
+  entryVolume: 0
+  correctVolume: 0
+  incorrectVolume: 0
   clientImage: {fileID: 3025814466061513365}
 --- !u!114 &1322514653766417686
 MonoBehaviour:
@@ -229,6 +232,9 @@ MonoBehaviour:
   entrySound: 6
   correctAudio: 7
   incorrectAudio: 8
+  entryVolume: 0
+  correctVolume: 0
+  incorrectVolume: 0
   clientImage: {fileID: 3025814466061513365}
   _ingredientInStomac: {fileID: 11400000, guid: 70a7b7d55536cf148a7dd026c339c1f2, type: 2}
   _ingredientInStomacTransform: {fileID: 7960430046787733274}
