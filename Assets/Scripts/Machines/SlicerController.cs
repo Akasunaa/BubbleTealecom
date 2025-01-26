@@ -29,12 +29,14 @@ namespace Machines
             var item = _mainItemSlot.GetItem();
             if (!item)
             {
+                SoundManager.PlaySound(SoundManager.Sound.Error);
                 return;
             }
             var ingredient = item.GetComponent<Ingredient>();
             if (!ingredient)
             {
                 Debug.LogError("BIZARRE INGREDIENT (probably the glass)");
+                SoundManager.PlaySound(SoundManager.Sound.Error);
                 return;
             }
 
@@ -49,8 +51,13 @@ namespace Machines
 
         public void OnSliderValueChanged(Scrollbar scrollbar)
         {
-            if (scrollbar.value > 0.0)
+            if (scrollbar.value < 0.1)
             {
+                SoundManager.PlaySound(SoundManager.Sound.SlicerLever);
+            }
+
+            if (scrollbar.value > 0.0)
+            {        
                 if (scrollbar.value > 0.9)
                 {
                     MachineExecuteButtonCalled();

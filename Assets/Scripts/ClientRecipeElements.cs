@@ -36,4 +36,17 @@ public class ClientRecipeElements : ScriptableObject
         }
         return recipe;
     }
+    
+    public Recipe ToRecipe(IngredientState toRemove)
+    {
+        Recipe recipe = new Recipe();
+        foreach (var clientRecipeElement in recipeElements)
+        {
+            if (!clientRecipeElement.ingredientStates.Contains(toRemove))
+            {
+                recipe.finalIngredientStates.Add(clientRecipeElement.ToIngredientState());
+            }
+        }
+        return recipe;
+    }
 }

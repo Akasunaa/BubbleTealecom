@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Client : MonoBehaviour
 {
-    private Recipe recipe;
+    [HideInInspector] public Recipe recipe;
     public ClientRecipeElements recipeDisplayElements;
     public float timerMax;
     private float _timer;
@@ -21,12 +21,27 @@ public class Client : MonoBehaviour
     public Transform bubbleAnswerElementTransform;
     public Sprite delimiterSprite;
     public Gradient timerGradient;
+    public SoundManager.Sound entrySound;
+    public SoundManager.Sound correctAudio;
+    public SoundManager.Sound incorrectAudio;
+
 
     private void Start()
     {
         _timer = timerMax;
-        recipe = recipeDisplayElements.ToRecipe();
+        recipe = ToRecipe(recipeDisplayElements);
         DisplayRecipe(recipeDisplayElements);
+        SetupClientSpecific();
+    }
+
+    public virtual void SetupClientSpecific()
+    {
+        
+    }
+
+    public virtual Recipe ToRecipe(ClientRecipeElements recipeElements)
+    {
+        return recipeElements.ToRecipe();
     }
 
     private void Update()
@@ -116,7 +131,7 @@ public class Client : MonoBehaviour
         }
     }
 
-    private Sprite GetSpriteFrom(IngredientState ingredientState)
+    public Sprite GetSpriteFrom(IngredientState ingredientState)
     {
         foreach (var ingredientStateImage in ingredientStateImageList.ingredientStatesImages)
         {
@@ -126,11 +141,11 @@ public class Client : MonoBehaviour
             }
         }
 
-        Debug.LogError("IngredientState image missing");
+        Debug.LogError("IngredientState image missing: " + ingredientState);
         return null;
     }
     
-    private Sprite GetSpriteFrom(Transformation transformation)
+    public Sprite GetSpriteFrom(Transformation transformation)
     {
         foreach (var transformationImage in transformationImageList.transformationImages)
         {
@@ -144,9 +159,9 @@ public class Client : MonoBehaviour
         return null;
     }
 
-    private Sprite FindWrongItem(ClientRecipeElements clientRecipeElements, Recipe glassRecipe)
+    public virtual Sprite FindWrongItem(ClientRecipeElements clientRecipeElements, Recipe glassRecipe)
     {
-        foreach (var clientRecipeElement in recipeDisplayElements.recipeElements)
+        foreach (var clientRecipeElement in clientRecipeElements.recipeElements)
         {
             var ingredientState = clientRecipeElement.ToIngredientState();
             if (!glassRecipe.finalIngredientStates.Contains(ingredientState))
@@ -162,6 +177,14 @@ public class Client : MonoBehaviour
                 }
 
                 return GetSpriteFrom(clientRecipeElement.transform);
+            }
+        }
+
+        foreach (var glassIngredientState in glassRecipe.finalIngredientStates)
+        {
+            if (!recipe.finalIngredientStates.Contains(glassIngredientState))
+            {
+                return GetSpriteFrom(glassIngredientState);
             }
         }
 

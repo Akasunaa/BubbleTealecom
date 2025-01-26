@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using LevelData.EnumHolders;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace LevelData
@@ -21,7 +22,7 @@ namespace LevelData
 
         private void Start()
         {
-            Load(_level);
+            Load(LevelDataHolder.CurrentLevel ? LevelDataHolder.CurrentLevel : _level);
         }
 
         public void Load(LevelObject level)
@@ -76,7 +77,7 @@ namespace LevelData
             }
 
             // setup clients
-            ClientManager.Instance.SetupClients(level._clients);
+            ClientManager.Instance.SetupClients(new List<GameObject>(level._clients));
         }
     }
 }

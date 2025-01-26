@@ -10,6 +10,7 @@ namespace World
             var cpnt = glass.GetComponent<GlassItemSlot>();
             if (cpnt)
             {
+                SoundManager.PlaySound(SoundManager.Sound.Trash);
                 cpnt.Clear();
             }
         }
