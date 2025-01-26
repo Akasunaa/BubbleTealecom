@@ -26,11 +26,6 @@ public class Client : MonoBehaviour
     {
         _timer = timerMax;
         recipe = ToRecipe(recipeDisplayElements);
-        foreach (var e in recipe.finalIngredientStates)
-        {
-            Debug.Log(e);
-        }
-        
         DisplayRecipe(recipeDisplayElements);
     }
 
