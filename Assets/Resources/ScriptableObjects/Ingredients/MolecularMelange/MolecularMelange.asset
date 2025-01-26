@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553b1e754fb74e5db463ffd3ca8a939a, type: 3}
   m_Name: MolecularMelange
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 7670693222495345702, guid: 3c2aaf19d0cc93a4a8f954c6276e2401, type: 3}
   possibleTransformations: []
   transformations: 
   oldIngredientState: []
+  color: {r: 0, g: 0, b: 0, a: 0}

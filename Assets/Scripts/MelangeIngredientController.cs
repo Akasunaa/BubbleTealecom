@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,12 +5,6 @@ public class MelangeIngredientController : MonoBehaviour
 {
     [SerializeField] private Image _originDots1;
     [SerializeField] private Image _originDots2;
-
-    private void OnValidate()
-    {
-        Assert.IsNotNull(_originDots1);
-        Assert.IsNotNull(_originDots2);
-    }
 
     public void CreateMelange(IngredientState ingredient1, IngredientState ingredient2)
     {

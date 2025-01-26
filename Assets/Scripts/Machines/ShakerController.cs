@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections;
 using UI;
 using UnityEngine;
@@ -12,11 +11,6 @@ namespace Machines
     {
         [SerializeField] private EmptyableItemSlot _mainItemSlot;
         private GameObject _curItemContained;
-
-        private void Awake()
-        {
-            Assert.IsNotNull(_mainItemSlot);
-        }
 
         public override void MachineExecuteButtonCalled()
         {

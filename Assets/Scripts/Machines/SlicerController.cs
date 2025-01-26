@@ -1,7 +1,6 @@
 using System;
 using UI;
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -15,14 +14,6 @@ namespace Machines
         [SerializeField] private EmptyableItemSlot _mainItemSlot;
         [SerializeField] private Scrollbar _bladeScrollbar;
         [SerializeField] private Scrollbar _handleScrollbar;
-        
-        private void Awake()
-        {
-            Assert.IsNotNull(_mainItemSlot);
-            Assert.IsNotNull(_bladeScrollbar);
-            Assert.IsNotNull(_handleScrollbar);
-        }
-
 
         public override void MachineExecuteButtonCalled()
         {

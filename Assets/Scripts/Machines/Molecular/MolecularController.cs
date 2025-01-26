@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections;
 using UI;
 using UnityEngine;
@@ -22,15 +21,6 @@ namespace Machines
 
         [Header("Output")]
         [SerializeField] private GameObject _melangeIngredient;
-
-        private void OnValidate()
-        {
-            Assert.IsNotNull(_tourniquetButton);
-            Assert.IsNotNull(_itemSlot1);
-            Assert.IsNotNull(_itemSlot2);
-            Assert.IsNotNull(_outputSlot);
-            Assert.IsNotNull(_machineTransformation);
-        }
 
         private void Awake()
         {
