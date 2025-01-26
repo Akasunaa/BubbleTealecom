@@ -86,7 +86,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3775556767313573690}
-  - component: {fileID: 8757574902159276565}
   - component: {fileID: 1322514653766417686}
   - component: {fileID: 957940538550477781}
   - component: {fileID: 8717442945449833178}
@@ -116,66 +115,6 @@ Transform:
   - {fileID: 7960430046787733274}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &8757574902159276565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458481278830898966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f45bfaf4c7f4f09aea2ce57f1631e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recipeDisplayElements: {fileID: 11400000, guid: 7ab4208156d0ebf44845f22523914309, type: 2}
-  timerMax: 25
-  timerFillImage: {fileID: 3674085021553774171}
-  bubbleRecipe: {fileID: 2434923002370888994}
-  bubbleRecipeAnswer: {fileID: 439648986225859362}
-  clientRecipeElementPrefab: {fileID: 6834121861435114819, guid: f3bdeb79b74ba0c4c9627c0ffffdd555, type: 3}
-  ingredientStateImageList: {fileID: 11400000, guid: a67a0c6ab77631c4bb73da3dac5075d5, type: 2}
-  transformationImageList: {fileID: 11400000, guid: c9557cf02ce10f54aadbbde202565f86, type: 2}
-  bubbleFirstElementTransform: {fileID: 7834159540968126166}
-  bubbleAnswerElementTransform: {fileID: 484620804396546863}
-  delimiterSprite: {fileID: 21300000, guid: 16271d9b34b85924cb8d60fb2a272f70, type: 3}
-  timerGradient:
-    serializedVersion: 2
-    key0: {r: 0, g: 1, b: 0.055066347, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  entrySound: 1
-  correctAudio: 1
-  incorrectAudio: 1
-  entryVolume: 0
-  correctVolume: 0
-  incorrectVolume: 0
-  clientImage: {fileID: 3025814466061513365}
 --- !u!114 &1322514653766417686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +137,7 @@ MonoBehaviour:
   transformationImageList: {fileID: 11400000, guid: 90fcf28cfd721474caa531cc21e2be5e, type: 2}
   bubbleFirstElementTransform: {fileID: 7834159540968126166}
   bubbleAnswerElementTransform: {fileID: 484620804396546863}
-  delimiterSprite: {fileID: 2828182002308998896, guid: 16271d9b34b85924cb8d60fb2a272f70, type: 3}
+  delimiterSprite: {fileID: 21300000, guid: 16271d9b34b85924cb8d60fb2a272f70, type: 3}
   timerGradient:
     serializedVersion: 2
     key0: {r: 0, g: 1, b: 0.055066347, a: 1}
