@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: CocoJelly
   m_EditorClassIdentifier: 
   sprite: {fileID: -5573473015858353260, guid: 5080e4e82ca558047bdb83832ab252d1, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 2
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 0}
+  transformations: 
+  oldIngredientState: []
+  color: {r: 0.98490566, g: 0.92596805, b: 0.72660017, a: 1}

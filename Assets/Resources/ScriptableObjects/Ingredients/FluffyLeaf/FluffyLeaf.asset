@@ -17,5 +17,9 @@ MonoBehaviour:
   - transformation: 1
     otherRequiredIngredientStates: []
     newIngredientState: {fileID: 11400000, guid: e8ea181fd5a21fd4390416c603cdfc72, type: 2}
+  - transformation: 2
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 0}
   transformations: 
   oldIngredientState: []
+  color: {r: 0, g: 1, b: 0.39736366, a: 1}

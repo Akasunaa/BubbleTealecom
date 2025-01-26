@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Tapioca
   m_EditorClassIdentifier: 
   sprite: {fileID: -6032115741611381947, guid: e9f5aaef1e5d5f64db70664cc4c284d1, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 2
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 0}
+  transformations: 
+  oldIngredientState: []
+  color: {r: 0.23018861, g: 0.23018861, b: 0.23018861, a: 1}

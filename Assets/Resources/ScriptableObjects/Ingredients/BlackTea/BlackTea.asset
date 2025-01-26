@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: BlackTea
   m_EditorClassIdentifier: 
   sprite: {fileID: -843232114449640590, guid: 864a09f939393e3449e2b6ab293beb2f, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 2
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 0}
+  transformations: 
+  oldIngredientState: []
+  color: {r: 0, g: 0, b: 0, a: 1}

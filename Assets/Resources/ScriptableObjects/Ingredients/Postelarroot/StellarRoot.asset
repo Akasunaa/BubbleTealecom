@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: StellarRoot
   m_EditorClassIdentifier: 
   sprite: {fileID: -934338234819615233, guid: e4f978c5ebe57324781254fde54556db, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 2
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 0}
+  transformations: 
+  oldIngredientState: []
+  color: {r: 1, g: 0.84052444, b: 0, a: 1}

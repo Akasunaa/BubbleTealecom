@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Cream
   m_EditorClassIdentifier: 
   sprite: {fileID: -3596645718660993179, guid: fa46cc9b4ebd4ca4a9b0d02d54fbfd64, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 2
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 0}
+  transformations: 
+  oldIngredientState: []
+  color: {r: 1, g: 1, b: 1, a: 1}

@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: GreenTea
   m_EditorClassIdentifier: 
   sprite: {fileID: -6231707311893363455, guid: f8cf72e0763bd0948b5681048b1a77b0, type: 3}
-  possibleTransformations: []
+  possibleTransformations:
+  - transformation: 2
+    otherRequiredIngredientStates: []
+    newIngredientState: {fileID: 0}
+  transformations: 
+  oldIngredientState: []
+  color: {r: 0, g: 1, b: 0.14672661, a: 1}
