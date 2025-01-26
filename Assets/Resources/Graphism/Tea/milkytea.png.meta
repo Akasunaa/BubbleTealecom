@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      milkytea_0: 2216563645312747002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

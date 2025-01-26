@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      potmilkytea_0: 3125292167407897947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
