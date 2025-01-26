@@ -16,7 +16,7 @@ namespace Machines
 
         [Header("Tourniquet Button")]
         [SerializeField] private RectTransform _tourniquetButton;
-        private Vector3 _tourniquetStartRotation;
+        private Quaternion _tourniquetStartRotation;
         [SerializeField] private float _rotationDegrees = 45;
 
         [Header("Output")]
@@ -24,8 +24,7 @@ namespace Machines
 
         private void Awake()
         {
-            _tourniquetStartRotation = _tourniquetButton.rotation.eulerAngles;
-            print(_tourniquetStartRotation);
+            _tourniquetStartRotation = _tourniquetButton.rotation;
         }
 
         public override void MachineExecuteButtonCalled()
@@ -88,7 +87,7 @@ namespace Machines
             //after delay, enable melange object
             newMelange.SetActive(true);
             //we reset the tourniquet
-            //TODO : RESET TOURNIQUET
+            _tourniquetButton.SetLocalPositionAndRotation(new Vector3(0f,92.8f,0f), _tourniquetStartRotation); 
             _working = false;
         }
 
