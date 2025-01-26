@@ -18,5 +18,8 @@ MonoBehaviour:
   _transformationLanguage: {fileID: 11400000, guid: 83c6d06936e178b4ba8e8ac747efad52, type: 2}
   _timer: 60
   _entrySound: 5
-  _correctAudio: 5
-  _incorrectAudio: 5
+  _correctAudio: 24
+  _incorrectAudio: 25
+  _entryVolume: 0.2
+  _correctVolume: 1
+  _incorrectVolume: 1

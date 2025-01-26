@@ -20,3 +20,6 @@ MonoBehaviour:
   _entrySound: 2
   _correctAudio: 21
   _incorrectAudio: 23
+  _entryVolume: 10
+  _correctVolume: 0.5
+  _incorrectVolume: 1

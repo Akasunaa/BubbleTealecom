@@ -58,6 +58,7 @@ namespace Machines
         public void OnTourniquetClicked()
         {
             //we rotate the tourniquet by x degrees
+            SoundManager.PlaySound(SoundManager.Sound.Tourniquet);
             float rotZ = _tourniquetButton.rotation.eulerAngles.z;
             rotZ -= _rotationDegrees;
             _tourniquetButton.rotation = Quaternion.Euler(new Vector3(_tourniquetButton.rotation.eulerAngles.x, _tourniquetButton.rotation.eulerAngles.y, rotZ));
