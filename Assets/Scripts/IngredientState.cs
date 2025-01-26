@@ -19,8 +19,7 @@ public class IngredientState : ScriptableObject
 {
     public Sprite sprite;
     [SerializeField] public List<IngredientTransformation> possibleTransformations;
-    [HideInInspector] public List<Transformation> transformations = new List<Transformation>();
-    [HideInInspector] public List<IngredientState> oldIngredientState = new List<IngredientState>();
+    [NonSerialized] [HideInInspector] public List<IngredientState> oldIngredientState = new List<IngredientState>();
 
     [Header("Ingredient Visual Data")]
     public Color color;
@@ -30,15 +29,33 @@ public class IngredientState : ScriptableObject
     {
         if (transformation == Transformation.None)
         {
+            oldIngredientState.Clear();
             return this;
         }
         
         foreach (var possibleTransformation in possibleTransformations)
         {
-            if (possibleTransformation.transformation == transformation && Recipe.CompareIngredientList(possibleTransformation.otherRequiredIngredientStates, otherIngredients))
+            if (possibleTransformation.transformation == transformation && possibleTransformation.transformation == Transformation.MolecularAssembly)
             {
                 IngredientState newIngredientState = possibleTransformation.newIngredientState;
-                newIngredientState.transformations.Add(transformation);
+                // IngredientState newIngredientState = CreateInstance<IngredientState>();
+                // newIngredientState = possibleTransformation.newIngredientState;
+                newIngredientState.oldIngredientState.Clear();
+                newIngredientState.oldIngredientState.Add(this);
+                if (otherIngredients != null)
+                {
+                    foreach (var otherIngredientState in otherIngredients)
+                    {
+                        newIngredientState.oldIngredientState.Add(otherIngredientState);
+                    }
+                }
+                return newIngredientState;
+            }
+            if (possibleTransformation.transformation == transformation)
+            {
+                IngredientState newIngredientState = possibleTransformation.newIngredientState; // CreateInstance<IngredientState>();
+                newIngredientState.oldIngredientState.Clear();
+                newIngredientState = possibleTransformation.newIngredientState;
                 newIngredientState.oldIngredientState.Add(this);
                 return newIngredientState;
             }

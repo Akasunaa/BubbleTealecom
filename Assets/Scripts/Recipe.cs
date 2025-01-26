@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.Collections;
 using UnityEngine;
 
@@ -24,12 +25,28 @@ public class Recipe
 
         foreach (var ingredientState in one)
         {
-            if (two.Contains(ingredientState))
+            var inTwo = two.Find(ig =>
+                ig.sprite == ingredientState.sprite &&
+                           SimpleCompareList(ig.oldIngredientState, ingredientState.oldIngredientState)
+            );
+            if (inTwo)
             {
-                two.Remove(ingredientState);
+                two.Remove(inTwo);
             }
         }
     
         return two.Count == 0;
+    }
+
+    private static bool SimpleCompareList(List<IngredientState> one, List<IngredientState> two)
+    {
+        foreach (var ingredientState in one)
+        {
+            if (!two.Find(ig => ig.sprite == ingredientState.sprite))
+            {
+                return false;
+            }
+        }
+        return one.Count == two.Count;
     }
 }

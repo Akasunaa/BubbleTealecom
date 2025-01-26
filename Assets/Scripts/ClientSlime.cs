@@ -31,9 +31,9 @@ public class ClientSlime : Client
             {
                 // Look for base ingredient in the recipe
                 var wrongBaseIngredientState = clientRecipeElement.ingredientStates.Find(baseIngredientState =>
-                    !glassRecipe.finalIngredientStates.Find(recipeIngredientState => recipeIngredientState == baseIngredientState ||
-                        recipeIngredientState.oldIngredientState.Contains(baseIngredientState)) ==
-                    baseIngredientState);
+                    !glassRecipe.finalIngredientStates.Find(recipeIngredientState => recipeIngredientState.sprite == baseIngredientState.sprite ||
+                        recipeIngredientState.oldIngredientState.Contains(baseIngredientState)).sprite ==
+                    baseIngredientState.sprite);
                 if (wrongBaseIngredientState)
                 {
                     return GetSpriteFrom(wrongBaseIngredientState);

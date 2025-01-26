@@ -16,5 +16,8 @@ public class MelangeIngredientController : MonoBehaviour
         {
             _originDots2.color = ingredient2.color;
         }
+        GetComponent<Ingredient>().ingredientState.oldIngredientState.Clear();
+        GetComponent<Ingredient>().ingredientState.oldIngredientState.Add(ingredient1);
+        GetComponent<Ingredient>().ingredientState.oldIngredientState.Add(ingredient2);
     }
 }

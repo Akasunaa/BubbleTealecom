@@ -180,7 +180,7 @@ public class Client : MonoBehaviour
             {
                 // Look for base ingredient in the recipe
                 var wrongBaseIngredientState = clientRecipeElement.ingredientStates.Find(baseIngredientState =>
-                    !glassRecipe.finalIngredientStates.Find(recipeIngredientState => recipeIngredientState == baseIngredientState ||
+                    !glassRecipe.finalIngredientStates.Find(recipeIngredientState => recipeIngredientState.sprite == baseIngredientState.sprite ||
                         recipeIngredientState.oldIngredientState.Contains(baseIngredientState)) ==
                     baseIngredientState);
                 if (wrongBaseIngredientState)
